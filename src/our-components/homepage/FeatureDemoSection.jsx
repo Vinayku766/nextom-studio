@@ -36,7 +36,7 @@ export default function FeatureDemoSection() {
     <section className="bg-black text-white py-12">
       <div className="container mx-auto px-6 max-w-5xl">
         <div
-          className="flex space-x-4 border-b border-gray-700 mb-8"
+          className="flex flex-wrap space-x-4 border-b border-gray-700 mb-8"
           role="tablist"
           aria-label="Feature demos"
         >
