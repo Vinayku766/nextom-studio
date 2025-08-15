@@ -9,7 +9,7 @@ const AboutSection = () => {
         {/* Avatar */}
         <div className="shrink-0 w-40 h-40 md:w-52 md:h-52 rounded-full overflow-hidden border-4 border-white/10">
           <Image
-            src="/de8c3823-0056-487a-aa37-fb29e88f0f37.png"
+            src="/User/Vipul-Dagar.png"
             alt="Vipul Dagar portrait"
             width={208}
             height={208}
