@@ -96,7 +96,7 @@ const sendEmail = async (e) => {
               type="submit"
               className="w-full bg-gradient-to-r from-pink-500 to-purple-600 hover:opacity-90 text-white font-semibold py-3 rounded-md transition"
             >
-             {loading ? <ClipLoader size={20} color="#fff" /> : 'Send Brief'}
+             {loading ? <ClipLoader size={20} color="#fff" /> : 'Send'}
             </button>
             <small className="text-gray-400 block text-center opacity-80" id="formNote">
               We'll get back to you within a few hours.
