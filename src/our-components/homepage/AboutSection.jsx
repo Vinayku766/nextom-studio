@@ -7,13 +7,13 @@ const AboutSection = () => {
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-20">
         
         {/* Avatar */}
-        <div className="shrink-0 w-100 h-100 md:w-100 md:h-100 rounded-full overflow-hidden border-4 border-white/10">
+        <div className="shrink-0 w-90 h-90 md:w-52 md:h-52 rounded-full overflow-hidden border-4 border-white/10">
           <Image
             src="/User/Vipul-Dagar.png"
             alt="Vipul Dagar portrait"
-            width={240}
-            height={240}
-            className="w-full h-full object-cover"
+            width={208}
+            height={208}
+            className="w-full h-full object-cover scale-115 -translate-x-[25px] translate-y-[20px] md:scale-120 md:-translate-x-[20px]"
           />
         </div>
 
