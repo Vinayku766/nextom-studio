@@ -14,6 +14,32 @@ const brands = [
       </>
     ),
   },
+    { name: 'BrandOne', svg: <circle cx="12" cy="12" r="8" /> },
+  { name: 'Vertex', svg: <rect x="4" y="6" width="16" height="12" rx="3" /> },
+  { name: 'NorthPeak', svg: <path d="M4 18L12 6l8 12H4Z" /> },
+  { name: 'Aurora', svg: <path d="M6 6h12v12H6z" /> },
+  {
+    name: 'Mono',
+    svg: (
+      <>
+        <circle cx="8" cy="12" r="4" />
+        <circle cx="16" cy="12" r="4" />
+      </>
+    ),
+  },
+    { name: 'BrandOne', svg: <circle cx="12" cy="12" r="8" /> },
+  { name: 'Vertex', svg: <rect x="4" y="6" width="16" height="12" rx="3" /> },
+  { name: 'NorthPeak', svg: <path d="M4 18L12 6l8 12H4Z" /> },
+  { name: 'Aurora', svg: <path d="M6 6h12v12H6z" /> },
+  {
+    name: 'Mono',
+    svg: (
+      <>
+        <circle cx="8" cy="12" r="4" />
+        <circle cx="16" cy="12" r="4" />
+      </>
+    ),
+  },
 ]
 
 const loopedBrands = [...brands, ...brands] // repeat for seamless scrolling
@@ -21,7 +47,7 @@ const loopedBrands = [...brands, ...brands] // repeat for seamless scrolling
 const BrandsSection = () => {
   return (
     <section className="bg-black py-10 overflow-hidden border-t border-b border-white/10">
-      <div className="relative">
+      <div className="relative max-w-6xl mx-auto overflow-hidden">
         <div className="marquee-track flex gap-6 w-max">
           {loopedBrands.map((brand, i) => (
             <div

@@ -3,8 +3,8 @@ import React from 'react'
 
 const HeroSection = () => {
   return (
-    <header id="top" className="relative w-full bg-black text-white py-10 md:py-20">
-      <div className="container mx-auto px-6 flex flex-col-reverse md:flex-row items-center justify-between gap-12 mt-5">
+    <header id="top" className="relative w-full bg-black text-white px-6 py-10 md:py-20">
+      <div className="container max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-12 mt-5">
         {/* Text Content */}
         <div className="flex-1 space-y-6">
           <span className="inline-block bg-white/10 text-sm px-3 py-1 rounded-full tracking-wide">

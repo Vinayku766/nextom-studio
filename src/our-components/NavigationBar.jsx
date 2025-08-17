@@ -11,10 +11,10 @@ export default function CustomNavbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
 
         {/* Logo */}
-        <div className="flex items-center gap-3">
+        <Link className="flex items-center gap-3" href={"/"}>
           <Image src="/logo/logo.png" alt="Nextom Studio" width={40} height={40} />
           <span className="text-white font-semibold text-lg">Nextom Studio</span>
-        </div>
+        </Link>
 
         {/* Desktop nav links */}
         <nav className="hidden md:flex items-center gap-6 text-white" aria-label="Primary">
