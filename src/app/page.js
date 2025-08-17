@@ -6,6 +6,8 @@ import HeroSection from "@/our-components/homepage/HeroSection";
 import FeatureDemoSection from "@/our-components/homepage/FeatureDemoSection";
 import PricingSection from "@/our-components/homepage/PricingSection";
 import CTASection from "@/our-components/homepage/CTASection";
+import TestimonialsSection from "@/our-components/homepage/TestimonialsSection";
+import StatsSection from "@/our-components/homepage/StatsSection";
 
 export default function Home() {
   return (
@@ -14,8 +16,10 @@ export default function Home() {
     <BrandsSection />
     <AboutSection />
     <FeatureDemoSection />
+    <StatsSection />
     <FeaturesSection />
     <PricingSection />
+    <TestimonialsSection />
     <CTASection />
     <FAQSection />
   </>

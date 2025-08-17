@@ -4,7 +4,23 @@ import Link from "next/link"
 import Image from "next/image"
 
 export default function CustomNavbar() {
-  const [mobileOpen, setMobileOpen] = useState(false)
+  const [mobileOpen, setMobileOpen] = useState(false);
+
+  const linkUnderlineClasses = `
+  relative inline-block
+  after:content-['']
+  after:absolute
+  after:left-0
+  after:bottom-[-5px]
+  after:h-[4px]
+  after:w-0
+  after:bg-gradient-to-r
+  after:from-pink-500
+  after:to-purple-500
+  after:transition-all
+  after:duration-300
+  hover:after:w-full
+`;
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#05080c] backdrop-blur-lg border-b border-white/10">
@@ -18,11 +34,11 @@ export default function CustomNavbar() {
 
         {/* Desktop nav links */}
         <nav className="hidden md:flex items-center gap-6 text-white" aria-label="Primary">
-          <Link href="#features" className="hover:text-gray-300">Features</Link>
-          <Link href="#about" className="hover:text-gray-300">About</Link>
-          <Link href="#showcase" className="hover:text-gray-300">Showcase</Link>
-          <Link href="#pricing" className="hover:text-gray-300">Pricing</Link>
-          <Link href="#faq" className="hover:text-gray-300">FAQ</Link>
+        <Link href="#features" className={linkUnderlineClasses}>Features</Link>
+      <Link href="#about" className={linkUnderlineClasses}>About</Link>
+      <Link href="#showcase" className={linkUnderlineClasses}>Showcase</Link>
+      <Link href="#pricing" className={linkUnderlineClasses}>Pricing</Link>
+      <Link href="#faq" className={linkUnderlineClasses}>FAQ</Link>
         </nav>
 
         {/* CTA buttons */}
