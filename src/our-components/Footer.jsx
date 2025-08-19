@@ -4,7 +4,8 @@ import Link from 'next/link';
 import { IoMailOpenOutline } from "react-icons/io5";
 import { FaPhone } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa";
+import { FiPhone } from "react-icons/fi";
+import { FiYoutube } from "react-icons/fi";
 
 const Footer = () => {
   return (
@@ -40,21 +41,21 @@ const Footer = () => {
             href="tel:+919315084010"
             className="hover:text-white underline transition text-sm xl:text-md"
           >
-           <FaPhone className='inline-block size-4'/> 
+           <FiPhone className='inline-block size-5'/> 
           </Link>
           {' '}
              <Link
-            href="https://www.instagram.com/"
+            href="https://www.instagram.com/nextomstudio/"
             className="hover:text-white underline transition text-sm xl:text-md"
           >
            <FaInstagram className='inline-block size-5'/>
           </Link>
           {' '}
           <Link 
-          href='https://www.facebook.com/'
+          href='https://www.youtube.com/@nextomstudio8727'
           className='hover:text-white underline transition text-sm xl:text-md'
           >
-          <FaFacebook className='inline-block size-5'/>
+          <FiYoutube className='inline-block size-5'/>
           </Link>
           {' '}
         </div>
