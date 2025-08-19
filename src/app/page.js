@@ -13,12 +13,12 @@ export default function Home() {
   return (
   <>
     <HeroSection />
-    <BrandsSection />
     <AboutSection />
     <FeatureDemoSection />
     <StatsSection />
-    <FeaturesSection />
     <PricingSection />
+    <FeaturesSection />
+    <BrandsSection />
     <TestimonialsSection />
     <CTASection />
     <FAQSection />

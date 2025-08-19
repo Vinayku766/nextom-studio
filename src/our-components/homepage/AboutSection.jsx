@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const AboutSection = () => {
   return (
-    <section id="about" className="bg-black text-white py-20 px-6">
+    <section id="about" className="bg-black text-white py-10 px-6">
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-20">
         
         {/* Avatar */}
