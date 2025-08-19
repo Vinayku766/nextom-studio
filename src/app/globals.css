@@ -1,11 +1,6 @@
 @import 'tailwindcss';
 
 
-@theme{
-  
-}
-
-
 @keyframes marquee {
   0% {
     transform: translateX(0%);
