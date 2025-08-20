@@ -1,5 +1,13 @@
 @import 'tailwindcss';
-
+@theme{
+  --primary-color: #f6339a;
+  --secondary-color: #f0b100;
+  --theme-dark: #000;
+  --theme-light: #fff;
+  --font-poppins: "Poppins", sans-serif;
+  --font-mont: "Montserrat", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+}
 
 @keyframes marquee {
   0% {

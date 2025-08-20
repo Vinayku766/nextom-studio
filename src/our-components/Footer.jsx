@@ -24,7 +24,7 @@ const Footer = () => {
         </div>
 
         {/* Copyright */}
-        <small className="block text-white text-sm xl:text-md mb-5 mb:mb-0">
+        <small className="block text-white text-sm xl:text-md mb-5 md:mb-0">
           © 2025 Nextom Studio. All rights reserved.
         </small>
 
@@ -33,27 +33,27 @@ const Footer = () => {
           {' '}
           <Link
             href="mailto:nextomstudio@gmail.com"
-            className="hover:text-white underline transition text-sm xl:text-md"
+            className="hover:text-pink-500 duration-300 ease-in-out hover:scale-110 underline transition text-sm xl:text-md"
           >
            <IoMailOpenOutline className='inline-block size-5'/>
           </Link>{' '}
           <Link
             href="tel:+919315084010"
-            className="hover:text-white underline transition text-sm xl:text-md"
+            className="hover:text-pink-500 duration-300 ease-in-out hover:scale-110 underline transition text-sm xl:text-md"
           >
            <FiPhone className='inline-block size-5'/> 
           </Link>
           {' '}
              <Link
             href="https://www.instagram.com/nextomstudio/"
-            className="hover:text-white underline transition text-sm xl:text-md"
+            className="hover:text-pink-500 duration-300 ease-in-out hover:scale-110 underline transition text-sm xl:text-md"
           >
            <FaInstagram className='inline-block size-5'/>
           </Link>
           {' '}
           <Link 
           href='https://www.youtube.com/@nextomstudio8727'
-          className='hover:text-white underline transition text-sm xl:text-md'
+          className='hover:text-pink-500 duration-300 ease-in-out hover:scale-110 underline transition text-sm xl:text-md'
           >
           <FiYoutube className='inline-block size-5'/>
           </Link>

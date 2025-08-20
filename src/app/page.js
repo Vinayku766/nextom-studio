@@ -8,14 +8,17 @@ import PricingSection from "@/our-components/homepage/PricingSection";
 import CTASection from "@/our-components/homepage/CTASection";
 import TestimonialsSection from "@/our-components/homepage/TestimonialsSection";
 import StatsSection from "@/our-components/homepage/StatsSection";
+import VideoSwiper from "@/our-components/homepage/VideoSwiper";
 
 export default function Home() {
   return (
   <>
     <HeroSection />
     <AboutSection />
+ 
     <FeatureDemoSection />
     <StatsSection />
+    <VideoSwiper />
     <PricingSection />
     <FeaturesSection />
     <BrandsSection />

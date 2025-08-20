@@ -50,7 +50,7 @@ export default function PricingSection() {
         {/* Pricing Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Starter */}
-          <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-8 hover:shadow-xl transition">
+          <div className="bg-white/5 hover:scale-105 duration-500 ease-in-out backdrop-blur-md border border-white/10 rounded-xl p-8 hover:shadow-xl transition">
             <h3 className="text-xl font-semibold mb-4">Starter</h3>
             <div className="text-4xl font-bold text-pink-500 mb-2">
               {formatPrice(pricing.starter)}
@@ -66,7 +66,7 @@ export default function PricingSection() {
           </div>
 
           {/* Pro */}
-          <div className="bg-gradient-to-b from-pink-600 to-purple-700 text-white border border-pink-400 rounded-xl p-8 shadow-lg transform scale-[1.03]">
+          <div className="bg-gradient-to-b from-pink-600 to-purple-700 text-white border border-pink-400 rounded-xl p-8 shadow-lg transform scale-[1.03] hover:scale-105 duration-500 ease-in-out">
             <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
               Pro <FaStar className="text-yellow-300" />
             </h3>
@@ -80,14 +80,14 @@ export default function PricingSection() {
             </ul>
             <Link
               href="#cta"
-              className="mt-6 inline-block bg-white text-black px-4 py-2 rounded hover:bg-gray-200 transition"
+              className="mt-6 inline-block bg-white text-black px-4 py-2 rounded hover:bg-gray-200 transition duration-300 ease-in-out"
             >
               Choose Pro
             </Link>
           </div>
 
           {/* Studio */}
-          <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-8 hover:shadow-xl transition">
+          <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-8 hover:shadow-xl transition hover:scale-105 duration-500">
             <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
               Studio <FaCrown className="text-yellow-400" />
             </h3>
