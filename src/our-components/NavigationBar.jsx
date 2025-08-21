@@ -21,6 +21,7 @@ export default function CustomNavbar() {
   after:transition-all
   after:duration-300
   hover:after:w-full
+  font-semibold
 `;
 
   return (
@@ -44,10 +45,10 @@ export default function CustomNavbar() {
 
         {/* CTA buttons */}
         <div className="hidden md:flex items-center gap-3">
-          <Link href="https://www.paypal.com/paypalme/ghost123fortnite" className="btn bg-white font-extrabold text-blue-800 ghost flex justify-center items-center border hover:scale-95 italic border-white/30 hover:border-white/50 transition px-4 py-2 rounded-md">
+          <Link href="https://www.paypal.com/paypalme/ghost123fortnite" className="btn bg-white font-extrabold text-blue-800 ghost flex justify-center items-center border hover:scale-95 italic border-white/30 hover:border-white/50 transition px-3 py-1 rounded-md">
             <FaPaypal className="size-4 text-blue-800"/>&nbsp;Pay<span className="text-blue-500">pal</span>
           </Link>
-          <Link href="#cta" className="btn primary hover:scale-95 text-gray-100 border border-gray-100 hover:border-gray-300 transition px-4 py-2 rounded-md font-semibold">
+          <Link href="#cta" className="btn primary hover:scale-95 text-gray-100 border border-gray-100 hover:border-gray-300 transition px-3 py-1 rounded-md font-semibold">
             Get Started
           </Link>
         </div>

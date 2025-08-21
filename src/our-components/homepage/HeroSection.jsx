@@ -12,7 +12,7 @@ const HeroSection = () => {
           muted
           loop
           playsInline
-          poster="https://images.unsplash.com/photo-1526948128573-703ee1aeb6fa?q=80&w=1600&auto=format&fit=crop"
+          // poster="https://images.unsplash.com/photo-1526948128573-703ee1aeb6fa?q=80&w=1600&auto=format&fit=crop"
           className="w-full h-full object-cover"
         >
           <source

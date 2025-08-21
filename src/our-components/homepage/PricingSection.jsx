@@ -50,9 +50,9 @@ export default function PricingSection() {
         {/* Pricing Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Starter */}
-          <div className="bg-white/5 hover:scale-105 duration-500 ease-in-out backdrop-blur-md border border-white/10 rounded-xl p-8 hover:shadow-xl transition">
+          <div className="bg-white/5 group hover:scale-105 hover:bg-gradient-to-b hover:from-pink-600 hover:to-purple-700 duration-500 ease-in-out backdrop-blur-md border border-white/10 rounded-xl p-8 hover:shadow-xl transition">
             <h3 className="text-xl font-semibold mb-4">Starter</h3>
-            <div className="text-4xl font-bold text-pink-500 mb-2">
+            <div className="text-4xl font-bold text-pink-500 group-hover:text-white mb-2">
               {formatPrice(pricing.starter)}
             </div>
             <ul className="text-sm text-gray-300 space-y-2 mt-4">
@@ -60,17 +60,17 @@ export default function PricingSection() {
               <li className="flex items-center gap-2"><FaCheck /> 1 long‑form edit</li>
               <li className="flex items-center gap-2"><FaCheck /> Stock music & assets</li>
             </ul>
-            <Link href="#cta" className="mt-6 inline-block text-pink-500 hover:text-white transition">
+            <Link href="#cta" className="mt-6 inline-block text-pink-500 group-hover:text-white px-4 py-2 rounded font-semibold group-hover:bg-pink-500 transition">
               Choose Starter
             </Link>
           </div>
 
           {/* Pro */}
-          <div className="bg-gradient-to-b from-pink-600 to-purple-700 text-white border border-pink-400 rounded-xl p-8 shadow-lg transform scale-[1.03] hover:scale-105 duration-500 ease-in-out">
+          <div className="bg-white/5 group hover:scale-105 hover:bg-gradient-to-b hover:from-pink-600 hover:to-purple-700 duration-500 ease-in-out backdrop-blur-md border border-white/10 rounded-xl p-8 hover:shadow-xl transition">
             <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
               Pro <FaStar className="text-yellow-300" />
             </h3>
-            <div className="text-4xl font-bold mb-2">
+            <div className="text-4xl font-bold text-pink-500 group-hover:text-white mb-2">
               {formatPrice(pricing.pro)}
             </div>
             <ul className="text-sm space-y-2 mt-4">
@@ -80,18 +80,18 @@ export default function PricingSection() {
             </ul>
             <Link
               href="#cta"
-              className="mt-6 inline-block bg-white text-black px-4 py-2 rounded hover:bg-gray-200 transition duration-300 ease-in-out"
+              className="mt-6 inline-block text-pink-500 group-hover:text-white px-4 py-2 rounded font-semibold group-hover:bg-pink-500 transition"
             >
               Choose Pro
             </Link>
           </div>
 
           {/* Studio */}
-          <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-8 hover:shadow-xl transition hover:scale-105 duration-500">
+          <div className="bg-white/5 group hover:scale-105 hover:bg-gradient-to-b hover:from-pink-600 hover:to-purple-700 duration-500 ease-in-out backdrop-blur-md border border-white/10 rounded-xl p-8 hover:shadow-xl transition">
             <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
               Studio <FaCrown className="text-yellow-400" />
             </h3>
-            <div className="text-4xl font-bold text-pink-500 mb-2">
+            <div className="text-4xl font-bold text-pink-500 group-hover:text-white mb-2">
               {formatPrice(pricing.studio)}
             </div>
             <ul className="text-sm text-gray-300 space-y-2 mt-4">
@@ -99,7 +99,7 @@ export default function PricingSection() {
               <li className="flex items-center gap-2"><FaCheck /> Dedicated editor</li>
               <li className="flex items-center gap-2"><FaCheck /> Weekly strategy call</li>
             </ul>
-            <Link href="#cta" className="mt-6 inline-block text-pink-500 hover:text-white transition">
+            <Link href="#cta" className="mt-6 inline-block text-pink-500 group-hover:text-white px-4 py-2 rounded font-semibold group-hover:bg-pink-500 transition">
               Talk to Sales
             </Link>
           </div>

@@ -77,7 +77,7 @@ const VideoSwiper = () => {
 ]
 
   return (
-    <div className="w-full h-[400px] flex overflow-x-auto bg-black py-5">
+    <div className="w-full h-[480px] flex overflow-x-auto bg-black py-5">
       {images.map((image) => {
         const isActive = image.id === activeId;
         return (

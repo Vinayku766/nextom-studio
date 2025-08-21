@@ -11,28 +11,33 @@ const stats = [
 
 export default function StatsSection() {
   useEffect(() => {
+    const duration = 5000 // increased duration to slow down animation
+    const frameRate = 60
+    const totalFrames = Math.round((duration / 1000) * frameRate)
+
     const animateCount = (el, target) => {
-      let start = 0
-      const duration = 1500
-      const stepTime = Math.max(Math.floor(duration / target), 10)
+      let frame = 0
+      const increment = target / totalFrames
+      let currentCount = 0
+
       const counter = setInterval(() => {
-        start += 1
-        el.textContent = start
-        if (start >= target) {
+        frame++
+        currentCount += increment
+        if (frame >= totalFrames) {
           el.textContent = target
           clearInterval(counter)
+        } else {
+          el.textContent = Math.floor(currentCount)
         }
-      }, stepTime)
+      }, duration / totalFrames)
     }
 
     const observer = new IntersectionObserver(
       entries => {
         entries.forEach(entry => {
           if (entry.isIntersecting && !entry.target.classList.contains('counted')) {
-            const num = entry.target
-            const target = +num.dataset.count
-            animateCount(num, target)
-            num.classList.add('counted')
+            animateCount(entry.target, +entry.target.dataset.count)
+            entry.target.classList.add('counted')
           }
         })
       },
