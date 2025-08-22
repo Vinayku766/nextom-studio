@@ -16,8 +16,8 @@ export default function CustomNavbar() {
   after:h-[4px]
   after:w-0
   after:bg-gradient-to-r
-  after:from-pink-500
-  after:to-purple-500
+  after:from-blue-800
+  after:to-purple-600
   after:transition-all
   after:duration-300
   hover:after:w-full
@@ -30,7 +30,7 @@ export default function CustomNavbar() {
 
         {/* Logo */}
         <Link className="flex items-center gap-3" href={"/"}>
-          <Image src="/logo/logo.png" alt="Nextom Studio" width={40} height={40} />
+          <Image src="/logo/logo.png" alt="Nextom Studio" width={42} height={42} />
           <span className="text-white font-semibold text-lg">Nextom Studio</span>
         </Link>
 

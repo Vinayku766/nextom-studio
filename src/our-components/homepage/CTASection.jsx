@@ -62,12 +62,12 @@ const sendEmail = async (e) => {
         {/* Text Content */}
         <div className="space-y-6">
           <h2 className="text-3xl md:text-4xl font-bold">
-            Ready to <span className="bg-gradient-to-r from-pink-500 to-purple-500 text-transparent bg-clip-text">launch your story</span>?
+            Ready to <span className="bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text">launch your story</span>?
           </h2>
           <p className="text-gray-400 max-w-md">
             Share a brief and we’ll send a tailored plan with timelines and budget the same day.
           </p>
-          <Link href="#contact" className="inline-block bg-pink-600 hover:bg-pink-700 text-white px-6 py-3 rounded-lg font-medium transition">
+          <Link href="#contact" className="inline-block bg-blue-900 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-medium transition">
             Book a Free Consult
           </Link>
         </div>
@@ -94,7 +94,7 @@ const sendEmail = async (e) => {
             <button
               disabled={loading}
               type="submit"
-              className="w-full bg-gradient-to-r from-pink-500 to-purple-600 hover:opacity-90 text-white font-semibold py-3 rounded-md transition"
+              className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:opacity-90 text-white font-semibold py-3 rounded-md transition"
             >
              {loading ? <ClipLoader size={20} color="#fff" /> : 'Send'}
             </button>

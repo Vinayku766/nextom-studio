@@ -45,7 +45,7 @@ const FeaturesSection = () => {
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
           Various Styles,{' '}
-          <span className="text-transparent bg-gradient-to-r from-pink-500 to-yellow-500 bg-clip-text">
+          <span className="text-transparent bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text">
             Countless Assets
           </span>
         </h2>

@@ -74,7 +74,7 @@ const TestimonialsSection = () => {
      <section className="bg-black py-16 overflow-hidden">
       {/* <h2 className="text-3xl font-bold text-center mb-12"> </h2> */}
        <h2 className="text-3xl md:text-4xl font-bold text-white max-w-6xl text-center mb-10 mx-auto">
-           What Our <span className="bg-gradient-to-r from-pink-500 to-purple-500 text-transparent bg-clip-text">Clients </span> Say
+           What Our <span className="bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text">Clients </span> Say
           </h2>
       <div className="group relative w-full overflow-x-hidden max-w-6xl mx-auto">
         <div

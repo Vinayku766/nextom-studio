@@ -31,7 +31,7 @@ const HeroSection = () => {
           </span>
           <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
             Crafting{' '}
-            <span className="text-transparent bg-gradient-to-r from-pink-500 to-yellow-500 bg-clip-text">
+            <span className="text-transparent bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text">
               Cinematic Stories
             </span>{' '}
             for Brands & Creators

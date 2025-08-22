@@ -21,7 +21,7 @@ const AboutSection = () => {
         <div className="flex-1 space-y-6">
           <h2 className="text-3xl md:text-4xl font-bold">
             About{' '}
-            <span className="bg-gradient-to-r from-pink-500 to-yellow-500 text-transparent bg-clip-text">
+            <span className="bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text">
               Vipul Dagar
             </span>
           </h2>
