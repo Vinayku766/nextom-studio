@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import { FaCheck, FaCrown, FaStar } from 'react-icons/fa'
+import Div from '../common/DIv'
 
 export default function PricingSection() {
   const [isYearly, setIsYearly] = useState(false)
@@ -17,7 +18,7 @@ export default function PricingSection() {
 
   return (
     <section id="pricing" className="bg-black text-white py-16">
-      <div className="container mx-auto px-6 max-w-6xl">
+      <Div className="container mx-auto px-6 max-w-6xl">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
           Transparent Pricing
         </h2>
@@ -60,7 +61,7 @@ export default function PricingSection() {
               <li className="flex items-center gap-2"><FaCheck /> 1 long‑form edit</li>
               <li className="flex items-center gap-2"><FaCheck /> Stock music & assets</li>
             </ul>
-            <Link href="#cta" className="mt-6 inline-block text-purple-600 group-hover:text-white px-4 py-2 rounded font-semibold group-hover:bg-blue-600 transition">
+            <Link href="#cta" className="mt-6 inline-block text-purple-600 group-hover:text-white px-4 py-2 rounded font-semibold group-hover:outline group-hover:bg-transparent transition">
               Choose Starter
             </Link>
           </div>
@@ -80,7 +81,7 @@ export default function PricingSection() {
             </ul>
             <Link
               href="#cta"
-              className="mt-6 inline-block text-blue-800 group-hover:text-white px-4 py-2 rounded font-semibold group-hover:bg-blue-800 transition"
+              className="mt-6 inline-block text-blue-800 group-hover:text-white px-4 py-2 rounded font-semibold group-hover:outline group-hover:bg-transparent transition"
             >
               Choose Pro
             </Link>
@@ -99,12 +100,12 @@ export default function PricingSection() {
               <li className="flex items-center gap-2"><FaCheck /> Dedicated editor</li>
               <li className="flex items-center gap-2"><FaCheck /> Weekly strategy call</li>
             </ul>
-            <Link href="#cta" className="mt-6 inline-block text-blue-800 group-hover:text-white px-4 py-2 rounded font-semibold group-hover:bg-blue-800 transition">
+            <Link href="#cta" className="mt-6 inline-block text-blue-800 group-hover:text-white px-4 py-2 rounded font-semibold group-hover:outline group-hover:bg-transparent transition">
               Talk to Sales
             </Link>
           </div>
         </div>
-      </div>
+      </Div>
     </section>
   )
 }

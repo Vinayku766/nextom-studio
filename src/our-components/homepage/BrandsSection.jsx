@@ -1,5 +1,8 @@
 'use client'
 
+import Div from "../common/DIv"
+
+
 const brands = [
   { name: 'BrandOne', svg: <circle cx="12" cy="12" r="8" /> },
   { name: 'Vertex', svg: <rect x="4" y="6" width="16" height="12" rx="3" /> },
@@ -47,7 +50,7 @@ const loopedBrands = [...brands, ...brands] // repeat for seamless scrolling
 const BrandsSection = () => {
   return (
     <section className="bg-black py-10 overflow-hidden border-t border-b border-white/10">
-      <div className="relative max-w-6xl mx-auto overflow-hidden">
+      <Div className="relative max-w-6xl mx-auto overflow-hidden">
         <div className="marquee-track flex gap-6 w-max">
           {loopedBrands.map((brand, i) => (
             <div
@@ -67,7 +70,7 @@ const BrandsSection = () => {
             </div>
           ))}
         </div>
-      </div>
+      </Div>
 
       {/* Inline custom CSS */}
       <style jsx>{`

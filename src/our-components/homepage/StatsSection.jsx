@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect } from 'react'
+import Div from '../common/DIv'
 
 const stats = [
   { label: 'Projects Delivered', count: 1200 },
@@ -49,7 +50,7 @@ export default function StatsSection() {
 
   return (
     <section className="pb-12 bg-black">
-      <div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 px-4">
+      <Div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 px-4">
         {stats.map(({ label, count }) => (
           <div
             key={label}
@@ -64,7 +65,7 @@ export default function StatsSection() {
             <div className="opacity-80 text-white">{label}</div>
           </div>
         ))}
-      </div>
+      </Div>
     </section>
   )
 }

@@ -1,5 +1,6 @@
 'use client'
-import { FiChevronDown } from 'react-icons/fi'
+import { FiChevronDown } from 'react-icons/fi';
+import Div from '../common/DIv';
 
 
 const faqData = [
@@ -28,7 +29,7 @@ const faqData = [
 const FAQSection = () => {
   return (
     <section id="faq" className="bg-black text-white py-20 px-6">
-      <div className="max-w-4xl mx-auto">
+      <Div className="max-w-4xl mx-auto">
         {/* Section Title */}
         <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center">
           Frequently Asked Questions &nbsp;?
@@ -51,7 +52,7 @@ const FAQSection = () => {
             </details>
           ))}
         </div>
-      </div>
+      </Div>
     </section>
   )
 }

@@ -1,11 +1,13 @@
 'use client'
 import React from 'react'
+import Div from '../common/DIv'
+
 
 const HeroSection = () => {
   return (
-    <header id="top" className="relative w-full bg-black text-white px-6 py-10 md:py-20">
+    <section id="top" className="relative w-full bg-black/40 text-white px-6 py-10 md:py-20">
       {/* Video Section (Background) */}
-      <div className="absolute top-0 left-0 w-full h-full z-0 bg-gradient-to-b from-gray-400 to-gray-700">
+      <Div className="absolute top-0 left-0 w-full h-full -z-1 bg-gradient-to-b from-gray-400 to-gray-700">
         <video
           id="heroVideo"
           autoPlay
@@ -21,9 +23,9 @@ const HeroSection = () => {
           />
         </video>
         <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent"></div>
-      </div>
+      </Div>
 
-      <div className="container max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-12 mt-5 relative z-10">
+      <Div className="container max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-12 mt-5 relative z-10">
         {/* Text Content */}
         <div className="flex-2 space-y-6">
           <span className="inline-block bg-white/10 text-sm px-3 py-1 rounded-full tracking-wide">
@@ -85,8 +87,8 @@ const HeroSection = () => {
           Nextom Studio • Showreel
         </div> */}
         <div className='flex-1'></div>
-      </div>
-    </header>
+      </Div>
+    </section>
   )
 }
 

@@ -1,10 +1,11 @@
 'use client'
 import Image from 'next/image'
+import Div from '../common/DIv'
 
 const AboutSection = () => {
   return (
     <section id="about" className="bg-black text-white py-10 px-6">
-      <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-20">
+      <Div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-20">
         
         {/* Avatar */}
         <div className="shrink-0 w-75 h-75 md:w-52 md:h-52 rounded-full overflow-hidden border-4 border-white/10">
@@ -53,7 +54,7 @@ const AboutSection = () => {
             </div>
           </div>
         </div>
-      </div>
+      </Div>
     </section>
   )
 }

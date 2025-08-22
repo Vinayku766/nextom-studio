@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Div from "../common/DIv";
 
 const tabs = [
   {
@@ -36,13 +37,13 @@ export default function FeatureDemoSection() {
   return (
     <section className="relative bg-black text-white py-20 overflow-hidden">
       {/* Purple Aurora Background */}
-      <div className="absolute inset-0 z-0">
+      <Div className="absolute inset-0 z-0">
         <div className="absolute -top-32 left-16 w-96 h-96 bg-blue-700/90 blur-[160px] rounded-full"></div>
         <div className="absolute top-48 right-20 w-[500px] h-[500px] bg-blue-600/80 blur-[180px] rounded-full"></div>
         <div className="absolute bottom-20 left-1/4 w-[420px] h-[420px] bg-blue-700/70 blur-[150px] rounded-full"></div>
-      </div>
+      </Div>
 
-      <div className="relative container mx-auto px-6 max-w-6xl z-10">
+      <Div className="relative container mx-auto px-6 max-w-6xl z-10">
         {/* Tabs */}
         <div
           className="flex flex-wrap justify-center gap-4 border-b border-white/10 pb-8 mb-12"
@@ -102,7 +103,7 @@ export default function FeatureDemoSection() {
               </motion.div>
             ))}
         </AnimatePresence>
-      </div>
+      </Div>
     </section>
   );
 }

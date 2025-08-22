@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { toast } from 'react-toastify';
 import SendMailHook from '@/utils/SendMailHook';
 import { ClipLoader } from 'react-spinners';
+import Div from '../common/DIv';
 
 export default function CTASection() {
 const form = useRef();
@@ -60,7 +61,7 @@ const sendEmail = async (e) => {
     <section id="cta" className="bg-black text-white py-20 px-4">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
         {/* Text Content */}
-        <div className="space-y-6">
+        <Div className="space-y-6">
           <h2 className="text-3xl md:text-4xl font-bold">
             Ready to <span className="bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text">launch your story</span>?
           </h2>
@@ -70,10 +71,11 @@ const sendEmail = async (e) => {
           <Link href="#contact" className="inline-block bg-blue-900 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-medium transition">
             Book a Free Consult
           </Link>
-        </div>
+        </Div>
 
         {/* Form */}
-        <div className="backdrop-blur-lg bg-white/5 border border-white/10 rounded-xl p-6 shadow-lg">
+  
+        <Div className="backdrop-blur-lg bg-white/5 border border-white/10 rounded-xl p-6 shadow-lg">
           <form ref={form} className="space-y-4" onSubmit={sendEmail}>
             <input
               name="name"
@@ -102,7 +104,8 @@ const sendEmail = async (e) => {
               We'll get back to you within a few hours.
             </small>
           </form>
-        </div>
+        </Div>
+
       </div>
     </section>
   )

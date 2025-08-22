@@ -5,6 +5,8 @@ import { HiOutlineSpeakerWave } from 'react-icons/hi2'
 import { PiSparkleLight } from 'react-icons/pi'
 import { LuBrain } from 'react-icons/lu'
 import { FaBolt } from 'react-icons/fa'
+import Div from '../common/DIv'
+
 
 const features = [
   {
@@ -42,7 +44,7 @@ const features = [
 const FeaturesSection = () => {
   return (
     <section id="features" className="bg-black text-white py-20 px-6">
-      <div className="max-w-6xl mx-auto text-center">
+      <Div className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
           Various Styles,{' '}
           <span className="text-transparent bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text">
@@ -67,7 +69,7 @@ const FeaturesSection = () => {
             </div>
           ))}
         </div>
-      </div>
+      </Div>
     </section>
   )
 }

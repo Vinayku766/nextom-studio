@@ -1,5 +1,6 @@
 'use client'
 import React from 'react'
+import Div from '../common/DIv'
 
 const TestimonialsSection = () => {
        
@@ -73,6 +74,7 @@ const TestimonialsSection = () => {
   return (
      <section className="bg-black py-16 overflow-hidden">
       {/* <h2 className="text-3xl font-bold text-center mb-12"> </h2> */}
+      <Div>
        <h2 className="text-3xl md:text-4xl font-bold text-white max-w-6xl text-center mb-10 mx-auto">
            What Our <span className="bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text">Clients </span> Say
           </h2>
@@ -81,41 +83,49 @@ const TestimonialsSection = () => {
           className="flex w-max animate-marquee group-hover:[animation-play-state:paused] space-x-6 px-4"
         >
           {[...Testimonials, ...Testimonials].map((testimonial, index) => (
-            <div
-              key={index}
-              className="bg-white shadow-md rounded-lg p-6 w-80 shrink-0 hover:shadow-lg transition"
-            >
-              <div className="flex items-center mb-4">
-                <img
-                  src={testimonial.photo}
-                  alt={testimonial.name}
-                  className="w-12 h-12 rounded-full object-cover mr-3"
-                />
-                <div>
-                  <h3 className="text-md font-semibold">{testimonial.name}</h3>
-                  <p className="text-sm text-gray-500">{testimonial.position}</p>
-                  <p className="text-xs text-gray-400">{testimonial.location}</p>
-                </div>
-              </div>
-                 <div className="flex">
-                {[...Array(5)].map((_, i) => (
-                  <svg
-                    key={i}
-                    className={`w-4 h-4 ${
-                      i < testimonial.rating ? "text-yellow-400" : "text-gray-300"
-                    }`}
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967h4.174c.969 0 1.371 1.24.588 1.81l-3.38 2.455 1.287 3.966c.3.922-.755 1.688-1.54 1.118L10 13.348l-3.38 2.455c-.784.57-1.838-.196-1.539-1.118l1.287-3.966-3.38-2.455c-.783-.57-.38-1.81.588-1.81h4.174l1.286-3.967z" />
-                  </svg>
-                ))}
-              </div>
-              <p className="text-gray-700 text-sm my-4">"{testimonial.message}"</p>
-            </div>
+          <div
+  key={index}
+  className="bg-white/10 backdrop-blur-md border border-white/20 shadow-lg rounded-2xl p-6 w-80 shrink-0 
+             hover:shadow-xl transition-transform duration-300 ease-in-out"
+>
+  <div className="flex items-center mb-4">
+    <img
+      src={testimonial.photo}
+      alt={testimonial.name}
+      className="w-12 h-12 rounded-full object-cover mr-3 border border-white/30"
+    />
+    <div>
+      <h3 className="text-md font-semibold text-white">{testimonial.name}</h3>
+      <p className="text-sm text-gray-300">{testimonial.position}</p>
+      <p className="text-xs text-gray-400">{testimonial.location}</p>
+    </div>
+  </div>
+
+  {/* Rating Stars */}
+  <div className="flex mb-3">
+    {[...Array(5)].map((_, i) => (
+      <svg
+        key={i}
+        className={`w-4 h-4 ${
+          i < testimonial.rating ? "text-yellow-400 drop-shadow" : "text-gray-500"
+        }`}
+        fill="currentColor"
+        viewBox="0 0 20 20"
+      >
+        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967h4.174c.969 0 1.371 1.24.588 1.81l-3.38 2.455 1.287 3.966c.3.922-.755 1.688-1.54 1.118L10 13.348l-3.38 2.455c-.784.57-1.838-.196-1.539-1.118l1.287-3.966-3.38-2.455c-.783-.57-.38-1.81.588-1.81h4.174l1.286-3.967z" />
+      </svg>
+    ))}
+  </div>
+
+  <p className="text-gray-200 text-sm leading-relaxed italic">
+    "{testimonial.message}"
+  </p>
+</div>
+
           ))}
         </div>
       </div>
+      </Div>
     </section>
   )
 }

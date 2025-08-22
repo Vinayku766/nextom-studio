@@ -1,5 +1,6 @@
 'use client';
 import React, { useState, useRef, useEffect } from 'react';
+import Div from '../common/DIv';
 
 const VideoSwiper = () => {
   const [activeId, setActiveId] = useState(null);
@@ -77,7 +78,7 @@ const VideoSwiper = () => {
 ]
 
   return (
-    <div className="w-full h-[480px] flex overflow-x-auto bg-black py-5">
+    <Div className="w-full h-[480px] flex overflow-x-auto bg-black py-5">
       {images.map((image) => {
         const isActive = image.id === activeId;
         return (
@@ -105,7 +106,7 @@ const VideoSwiper = () => {
           </div>
         );
       })}
-    </div>
+    </Div>
   );
 };
 
