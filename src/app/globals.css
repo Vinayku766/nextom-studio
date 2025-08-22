@@ -17,6 +17,49 @@
           mask: var(--mask);
 }
 
+@keyframes aurora-vertical-glow {
+  0%, 100% { transform: translateY(0) scale(1); opacity: 0.6; }
+  50% { transform: translateY(-40px) scale(1.1); opacity: 1; }
+}
+
+@keyframes aurora-fade {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 0.9; transform: scale(1.05); }
+}
+
+@keyframes aurora-wobble {
+  0%, 100% { transform: translateX(0) rotate(0deg); }
+  50% { transform: translateX(15px) rotate(2deg); }
+}
+
+.animate-aurora-vertical {
+  animation: aurora-vertical-glow 4s ease-in-out infinite;
+}
+.animate-aurora-fade {
+  animation: aurora-fade 8s ease-in-out infinite;
+}
+.animate-aurora-wobble {
+  animation: aurora-wobble 12s ease-in-out infinite;
+}
+
+
+/* @keyframes aurora-vertical {
+  0%, 100% {
+    transform: scaleY(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scaleY(1.4);
+    opacity: 1;
+  }
+}
+
+
+.animate-aurora-vertical {
+  animation: aurora-vertical 6s ease-in-out infinite;
+} */
+
+
 @keyframes marquee {
   0% {
     transform: translateX(0%);
