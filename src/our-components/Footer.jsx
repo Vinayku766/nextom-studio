@@ -61,14 +61,14 @@ const Footer = () => {
     >
       <Div className="absolute inset-0 z-0 overflow-hidden">
         <div className="absolute inset-0 flex justify-between px-10">
-          <div className="w-52 h-[500px] bg-gradient-to-t from-blue-800/90 via-cyan-700/80 to-transparent blur-[100px] animate-aurora-vertical"></div>
-          <div className="w-40 h-[450px] bg-gradient-to-t from-indigo-700/90 via-purple-600/80 to-transparent blur-[90px] animate-aurora-fade [animation-delay:1s]"></div>
+          <div className="w-52 h-[500px] bg-gradient-to-t from-blue-800/90 via-blue-700/80 to-transparent blur-[100px] animate-aurora-vertical"></div>
+          <div className="w-40 h-[450px] bg-gradient-to-t from-blue-700/90 via-blue-600/80 to-transparent blur-[90px] animate-aurora-fade [animation-delay:1s]"></div>
 
-          <div className="w-56 h-[550px] bg-gradient-to-t from-cyan-600/90 via-blue-700/80 to-transparent blur-[120px] animate-aurora-wobble [animation-delay:2s]"></div>
-          <div className="w-44 h-[400px] bg-gradient-to-t from-green-600/90 via-teal-500/80 to-transparent blur-[100px] animate-aurora-fade [animation-delay:3s]"></div>
+          <div className="w-56 h-[550px] bg-gradient-to-t from-blue-600/90 via-blue-700/80 to-transparent blur-[120px] animate-aurora-wobble [animation-delay:2s]"></div>
+          <div className="w-44 h-[400px] bg-gradient-to-t from-blue-600/90 via-blue-500/80 to-transparent blur-[100px] animate-aurora-fade [animation-delay:3s]"></div>
 
-          <div className="w-52 h-[480px] bg-gradient-to-t from-indigo-800/90 via-cyan-700/80 to-transparent blur-[110px] animate-aurora-vertical [animation-delay:4s]"></div>
-          <div className="w-40 h-[420px] bg-gradient-to-t from-purple-700/90 via-blue-600/80 to-transparent blur-[100px] animate-aurora-wobble [animation-delay:5s]"></div>
+          <div className="w-52 h-[480px] bg-gradient-to-t from-blue-800/90 via-blue-700/80 to-transparent blur-[110px] animate-aurora-vertical [animation-delay:4s]"></div>
+          <div className="w-40 h-[420px] bg-gradient-to-t from-blue-700/90 via-blue-600/80 to-transparent blur-[100px] animate-aurora-wobble [animation-delay:5s]"></div>
         </div>
       </Div>
 

@@ -5,7 +5,7 @@ import Div from '../common/DIv'
 
 const HeroSection = () => {
   return (
-    <section id="top" className="relative w-full bg-black/40 text-white px-6 py-10 md:py-20">
+    <section id="top" className="relative w-full bg-black/50 text-white px-6 py-10 md:py-20">
       {/* Video Section (Background) */}
       <Div className="absolute top-0 left-0 w-full h-full -z-1 bg-gradient-to-b from-gray-400 to-gray-700">
         <video
@@ -33,7 +33,7 @@ const HeroSection = () => {
           </span>
           <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
             Crafting{' '}
-            <span className="text-transparent bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text">
+            <span className="text-blue-600 text-shadow-lg text-shadow-gray">
               Cinematic Stories
             </span>{' '}
             for Brands & Creators
@@ -45,7 +45,7 @@ const HeroSection = () => {
           </p>
 
           {/* Neon Divider */}
-          <div className="w-20 h-1 bg-gradient-to-r from-pink-500 via-yellow-500 to-purple-500 rounded-full" />
+          <div className="w-20 h-1 bg-blue-800 rounded-full" />
 
           {/* Actions */}
           <div className="flex flex-wrap gap-4">

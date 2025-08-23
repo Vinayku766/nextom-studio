@@ -3,6 +3,8 @@ import "./globals.css";
 import NavigationBar from "@/our-components/NavigationBar";
 import Footer from "@/our-components/Footer";
 import { ToastContainer } from "react-toastify";
+import PopupProviderHook from "@/utils/PopupProviderHook";
+import PaymentPopup from "@/our-components/common/PaymentPopup";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,10 +33,13 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+      <PopupProviderHook>
       <NavigationBar />
         {children}
         <ToastContainer />
+        <PaymentPopup />
       <Footer />
+      </PopupProviderHook>
       </body>
     </html>
   );

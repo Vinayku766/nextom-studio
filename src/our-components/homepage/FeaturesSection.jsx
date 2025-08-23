@@ -47,7 +47,7 @@ const FeaturesSection = () => {
       <Div className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
           Various Styles,{' '}
-          <span className="text-transparent bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text">
+          <span className="text-blue-800">
             Countless Assets
           </span>
         </h2>

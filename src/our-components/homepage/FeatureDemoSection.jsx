@@ -36,15 +36,13 @@ export default function FeatureDemoSection() {
 
   return (
     <section className="relative bg-black text-white py-20 overflow-hidden">
-      {/* Purple Aurora Background */}
       <Div className="absolute inset-0 z-0">
-        <div className="absolute -top-32 left-16 w-96 h-96 bg-blue-700/90 blur-[160px] rounded-full"></div>
-        <div className="absolute top-48 right-20 w-[500px] h-[500px] bg-blue-600/80 blur-[180px] rounded-full"></div>
-        <div className="absolute bottom-20 left-1/4 w-[420px] h-[420px] bg-blue-700/70 blur-[150px] rounded-full"></div>
+        <div className="absolute -top-32 left-16 w-96 h-96 bg-gray/50 blur-[160px] rounded-full"></div>
+        <div className="absolute top-48 right-20 w-[500px] h-[500px] bg-gray-500/50 blur-[180px] rounded-full"></div>
+        <div className="absolute bottom-20 left-1/4 w-[420px] h-[420px] bg-gray-400/40 blur-[150px] rounded-full"></div>
       </Div>
 
       <Div className="relative container mx-auto px-6 max-w-6xl z-10">
-        {/* Tabs */}
         <div
           className="flex flex-wrap justify-center gap-4 border-b border-white/10 pb-8 mb-12"
           role="tablist"
@@ -59,10 +57,10 @@ export default function FeatureDemoSection() {
               aria-controls={id}
               tabIndex={selectedTab === id ? 0 : -1}
               onClick={() => setSelectedTab(id)}
-              className={`px-6 py-2 rounded-full font-semibold tracking-wide transition-all duration-300
+              className={`px-6 py-2 cursor-pointer rounded-full font-semibold tracking-wide transition-all duration-300
                 ${
                   selectedTab === id
-                    ? "bg-gradient-to-r from-blue-700/90 to-purple-600/80 text-white shadow-[0_0_20px_rgba(147,51,234,0.7)]"
+                    ? "bg-black text-white shadow-[0_0_12px_rgba(255,255,255,0.25)]"
                     : "text-gray-400 hover:text-white hover:shadow-[0_0_12px_rgba(255,255,255,0.25)]"
                 }`}
             >
@@ -71,7 +69,6 @@ export default function FeatureDemoSection() {
           ))}
         </div>
 
-        {/* Panels with Animation */}
         <AnimatePresence mode="wait">
           {tabs
             .filter(({ id }) => id === selectedTab)

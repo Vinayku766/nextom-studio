@@ -4,11 +4,11 @@ import Div from '../common/DIv'
 
 const AboutSection = () => {
   return (
-    <section id="about" className="bg-black text-white py-10 px-6">
+    <section id="about" className="bg-black text-white py-10 px-6 relative">
       <Div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-20">
         
         {/* Avatar */}
-        <div className="shrink-0 w-75 h-75 md:w-52 md:h-52 rounded-full overflow-hidden border-4 border-white/10">
+        <div className="shrink-0 w-75 h-75 md:w-52 md:h-52 rounded-full overflow-hidden">
           <Image
             src="/User/Vipul-Dagar.png"
             alt="Vipul Dagar portrait"
@@ -22,7 +22,7 @@ const AboutSection = () => {
         <div className="flex-1 space-y-6">
           <h2 className="text-3xl md:text-4xl font-bold">
             About{' '}
-            <span className="bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text">
+            <span className="text-blue-800 text-shadow-lg text-shadow-gray">
               Vipul Dagar
             </span>
           </h2>

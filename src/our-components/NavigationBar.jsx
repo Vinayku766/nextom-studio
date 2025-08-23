@@ -2,10 +2,11 @@
 import { useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { FaPaypal } from "react-icons/fa";
+import { usePopup } from "@/utils/PopupProviderHook";
 
 export default function CustomNavbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
+ const { openPopup } = usePopup(); 
 
   const linkUnderlineClasses = `
   relative inline-block
@@ -25,7 +26,7 @@ export default function CustomNavbar() {
 `;
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-[#05080c] backdrop-blur-lg border-b border-white/10">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[#05080c]/75 backdrop-blur-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
 
         {/* Logo */}
@@ -45,9 +46,12 @@ export default function CustomNavbar() {
 
         {/* CTA buttons */}
         <div className="hidden md:flex items-center gap-3">
-          <Link href="https://www.paypal.com/paypalme/ghost123fortnite" className="btn bg-white font-extrabold text-blue-800 ghost flex justify-center items-center border hover:scale-95 italic border-white/30 hover:border-white/50 transition px-3 py-1 rounded-md">
-            <FaPaypal className="size-4 text-blue-800"/>&nbsp;Pay<span className="text-blue-500">pal</span>
-          </Link>
+          <button   onClick={() => {
+    setMobileOpen(false);
+    openPopup();
+  }} className="btn bg-white cursor-pointer font-extrabold text-blue-800 ghost flex justify-center items-center border hover:scale-95 border-white/30 hover:border-white/50 transition px-3 py-1 rounded-md">
+            Pay Online
+          </button>
           <Link href="#cta" className="btn primary hover:scale-95 text-gray-100 border border-gray-100 hover:border-gray-300 transition px-3 py-1 rounded-md font-semibold">
             Get Started
           </Link>
