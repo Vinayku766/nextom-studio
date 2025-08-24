@@ -52,7 +52,7 @@ const PaymentPopup = () => {
 
             <div className="flex justify-center mb-3">
               <img
-                src="./User/payment-QR.jpeg"
+                src="/qr.jpeg"
                 alt="payment-qr"
                 className="rounded-lg shadow-md w-40 h-40 object-cover"
               />
