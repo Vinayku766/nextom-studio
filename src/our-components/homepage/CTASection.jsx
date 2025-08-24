@@ -4,7 +4,10 @@ import Link from 'next/link'
 import { toast } from 'react-toastify';
 import SendMailHook from '@/utils/SendMailHook';
 import { ClipLoader } from 'react-spinners';
-import Div from '../common/DIv';
+// import Div from '../common/DIv';
+import EarthCanvas from "../common/EarthCanvas";
+import { motion } from "framer-motion";
+import { slideIn } from '@/utils/motion';
 
 export default function CTASection() {
 const form = useRef();
@@ -58,24 +61,31 @@ const sendEmail = async (e) => {
 
 
   return (
-    <section id="cta" className="bg-black text-white py-20 px-4">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
-        {/* Text Content */}
-        <Div className="space-y-6">
+    <section id="cta" className="text-white py-20 px-4 relative z-2">
+             <div className='space-y-6 mb-25 text-center'>
           <h2 className="text-3xl md:text-4xl font-bold">
             Ready to <span className="text-blue-600">launch your story</span>?
           </h2>
-          <p className="text-gray-400 max-w-md">
+          <p className="text-gray-400">
             Share a brief and we’ll send a tailored plan with timelines and budget the same day.
           </p>
-          <Link href="#contact" className="inline-block bg-blue-800 hover:bg-blue-900 text-white px-6 py-3 rounded-lg font-medium transition">
+          {/* <Link href="#contact" className="inline-block bg-blue-800 hover:bg-blue-900 text-white px-6 py-3 rounded-lg font-medium transition">
             Book a Free Consult
-          </Link>
-        </Div>
+          </Link> */}
+          </div>
+      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
+        {/* Text Content */}
+        <motion.div 
+         variants={slideIn("left", "tween", 0.2, 1)}
+         className="col-span-1">
+        <EarthCanvas />
+        </motion.div>
 
         {/* Form */}
   
-        <Div className="backdrop-blur-lg bg-white/5 border border-white/10 rounded-xl p-6 shadow-lg">
+        <motion.div 
+        variants={slideIn('right', 'tween', 0.2, 1)}
+        className="backdrop-blur-lg col-span-1 bg-white/5 border border-white/10 rounded-xl p-6 shadow-lg">
           <form ref={form} className="space-y-4" onSubmit={sendEmail}>
             <input
               name="name"
@@ -104,7 +114,7 @@ const sendEmail = async (e) => {
               We'll get back to you within a few hours.
             </small>
           </form>
-        </Div>
+        </motion.div>
 
       </div>
     </section>

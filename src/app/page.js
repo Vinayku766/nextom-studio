@@ -9,6 +9,7 @@ import CTASection from "@/our-components/homepage/CTASection";
 import TestimonialsSection from "@/our-components/homepage/TestimonialsSection";
 import StatsSection from "@/our-components/homepage/StatsSection";
 import VideoSwiper from "@/our-components/homepage/VideoSwiper";
+import StarsCanvas from "@/our-components/common/Stars";
 
 export default function Home() {
   return (
@@ -22,7 +23,10 @@ export default function Home() {
     <FeaturesSection />
     <BrandsSection />
     <TestimonialsSection />
+    <div className="relative z-0">
     <CTASection />
+    <StarsCanvas />
+    </div>
     <FAQSection />
   </>
   );
