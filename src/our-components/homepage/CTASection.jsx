@@ -1,10 +1,9 @@
 'use client'
 import { useState, useRef } from 'react'
-import Link from 'next/link'
 import { toast } from 'react-toastify';
 import SendMailHook from '@/utils/SendMailHook';
 import { ClipLoader } from 'react-spinners';
-// import Div from '../common/DIv';
+import Div from '../common/DIv';
 import EarthCanvas from "../common/EarthCanvas";
 import { motion } from "framer-motion";
 import { slideIn } from '@/utils/motion';
@@ -58,11 +57,29 @@ const sendEmail = async (e) => {
     }
 };
 
+// const slideIn = (direction, type, delay, duration) => {
+//   return {
+//     hidden: {
+//       x: direction === "left" ? "-100%" : direction === "right" ? "100%" : 0,
+//       y: direction === "up" ? "100%" : direction === "down" ? "100%" : 0,
+//     },
+//     show: {
+//       x: 0,
+//       y: 0,
+//       transition: {
+//         type: type,
+//         delay: delay,
+//         duration: duration,
+//         ease: "easeOut",
+//       },
+//     },
+//   };
+// };
 
 
   return (
-    <section id="cta" className="text-white py-20 px-4 relative z-2">
-             <div className='space-y-6 mb-25 text-center'>
+    <section id="cta" className="text-white py-20 px-4 relative z-2 overflow-hidden">
+             <Div className='space-y-6 mb-25 text-center'>
           <h2 className="text-3xl md:text-4xl font-bold">
             Ready to <span className="text-blue-600">launch your story</span>?
           </h2>
@@ -72,11 +89,14 @@ const sendEmail = async (e) => {
           {/* <Link href="#contact" className="inline-block bg-blue-800 hover:bg-blue-900 text-white px-6 py-3 rounded-lg font-medium transition">
             Book a Free Consult
           </Link> */}
-          </div>
+          </Div>
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
         {/* Text Content */}
         <motion.div 
-         variants={slideIn("left", "tween", 0.2, 1)}
+           variants={slideIn("left", "tween", 0.2, 1)}
+           initial="hidden"
+           whileInView="show"
+           viewport={{ once: true}} 
          className="col-span-1">
         <EarthCanvas />
         </motion.div>
@@ -84,7 +104,10 @@ const sendEmail = async (e) => {
         {/* Form */}
   
         <motion.div 
-        variants={slideIn('right', 'tween', 0.2, 1)}
+        variants={slideIn("right", "tween", 0.2, 1)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true}} 
         className="backdrop-blur-lg col-span-1 bg-white/5 border border-white/10 rounded-xl p-6 shadow-lg">
           <form ref={form} className="space-y-4" onSubmit={sendEmail}>
             <input
