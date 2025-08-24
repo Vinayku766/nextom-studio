@@ -41,7 +41,7 @@ const sendEmail = async (e) => {
 
   try {
     await SendMailHook(form);
-    form.current.reset(); // optional: clear form after success
+    form.current.reset(); 
     toast.success('Query Sent Successfully!', {
       position: 'top-right',
       theme: 'dark',
@@ -56,25 +56,6 @@ const sendEmail = async (e) => {
       setLoading(false);
     }
 };
-
-// const slideIn = (direction, type, delay, duration) => {
-//   return {
-//     hidden: {
-//       x: direction === "left" ? "-100%" : direction === "right" ? "100%" : 0,
-//       y: direction === "up" ? "100%" : direction === "down" ? "100%" : 0,
-//     },
-//     show: {
-//       x: 0,
-//       y: 0,
-//       transition: {
-//         type: type,
-//         delay: delay,
-//         duration: duration,
-//         ease: "easeOut",
-//       },
-//     },
-//   };
-// };
 
 
   return (
@@ -91,7 +72,6 @@ const sendEmail = async (e) => {
           </Link> */}
           </Div>
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
-        {/* Text Content */}
         <motion.div 
            variants={slideIn("left", "tween", 0.2, 1)}
            initial="hidden"
@@ -100,8 +80,6 @@ const sendEmail = async (e) => {
          className="col-span-1">
         <EarthCanvas />
         </motion.div>
-
-        {/* Form */}
   
         <motion.div 
         variants={slideIn("right", "tween", 0.2, 1)}
