@@ -1,5 +1,6 @@
 'use client'
 import { useState, useRef } from 'react'
+import Link from 'next/link'
 import { toast } from 'react-toastify';
 import SendMailHook from '@/utils/SendMailHook';
 import { ClipLoader } from 'react-spinners';
@@ -41,7 +42,7 @@ const sendEmail = async (e) => {
 
   try {
     await SendMailHook(form);
-    form.current.reset(); 
+    form.current.reset(); // optional: clear form after success
     toast.success('Query Sent Successfully!', {
       position: 'top-right',
       theme: 'dark',
@@ -58,6 +59,7 @@ const sendEmail = async (e) => {
 };
 
 
+
   return (
     <section id="cta" className="text-white py-20 px-4 relative z-2 overflow-hidden">
              <Div className='space-y-6 mb-25 text-center'>
@@ -72,20 +74,23 @@ const sendEmail = async (e) => {
           </Link> */}
           </Div>
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
+        {/* Text Content */}
         <motion.div 
-           variants={slideIn("left", "tween", 0.2, 1)}
-           initial="hidden"
-           whileInView="show"
-           viewport={{ once: true}} 
+         variants={slideIn("left", "tween", 0.2, 1)}
+         initial="hidden"
+         whileInView="show"
+         viewport={{once: true}}
          className="col-span-1">
         <EarthCanvas />
         </motion.div>
+
+        {/* Form */}
   
         <motion.div 
-        variants={slideIn("right", "tween", 0.2, 1)}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true}} 
+         variants={slideIn('right', 'tween', 0.2, 1)}
+         initial="hidden"
+         whileInView="show"
+          viewport={{once: true}}
         className="backdrop-blur-lg col-span-1 bg-white/5 border border-white/10 rounded-xl p-6 shadow-lg">
           <form ref={form} className="space-y-4" onSubmit={sendEmail}>
             <input
