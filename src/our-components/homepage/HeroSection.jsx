@@ -33,7 +33,7 @@ const HeroSection = () => {
           </span>
           <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
             Crafting{' '}
-            <span className="text-blue-600 text-shadow-lg text-shadow-gray">
+            <span className="bg-gradient-to-r from-primary-aqua to-secondary-blue bg-clip-text text-transparent text-shadow-lg">
               Cinematic Stories
             </span>{' '}
             for Brands & Creators
@@ -45,7 +45,7 @@ const HeroSection = () => {
           </p>
 
           {/* Neon Divider */}
-          <div className="w-20 h-1 bg-blue-800 rounded-full" />
+          <div className="w-20 h-1 bg-graident-to-r from-primary-aqua to-secondary-blue rounded-full" />
 
           {/* Actions */}
           <div className="flex flex-wrap gap-4">

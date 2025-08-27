@@ -17,7 +17,7 @@ export default function PricingSection() {
     isYearly ? `$${price.toFixed(0)} /yr` : `$${price}/mo`
 
   return (
-    <section id="pricing" className="bg-black text-white py-16">
+    <section id="pricing" className="bg-theme-dark text-theme-light py-16">
       <Div className="container mx-auto px-6 max-w-6xl">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
           Transparent Pricing
@@ -34,26 +34,26 @@ export default function PricingSection() {
             role="switch"
             aria-checked={isYearly}
             className={`relative w-14 h-7 flex items-center rounded-full px-1 transition-colors duration-300 ${
-              isYearly ? 'bg-blue-800' : 'bg-gray-700'
+              isYearly ? 'bg-secondary-blue' : 'bg-gray-700'
             }`}
           >
             <span
-              className={`w-5 h-5 bg-white rounded-full shadow-md transform transition-transform duration-300 ${
+              className={`w-5 h-5 bg-theme-light rounded-full shadow-md transform transition-transform duration-300 ${
                 isYearly ? 'translate-x-7' : ''
               }`}
             ></span>
           </button>
           <span className="text-gray-300 flex items-center gap-1">
-            Yearly <span className="bg-blue-800 text-white text-xs px-2 py-0.5 rounded-full">save 15%</span>
+            Yearly <span className="bg-secondary-blue text-theme-light text-xs px-2 py-0.5 rounded-full">save 15%</span>
           </span>
         </div>
 
         {/* Pricing Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Starter */}
-          <div className="bg-white/5 group hover:scale-105 hover:bg-gradient-to-b hover:from-blue-800 hover:to-black duration-500 ease-in-out backdrop-blur-md rounded-xl p-8 hover:shadow-xl transition">
+          <div className="bg-white/5 group hover:scale-105 hover:bg-gradient-to-b hover:from-primary-aqua hover:to-theme-dark duration-500 ease-in-out backdrop-blur-md rounded-xl p-8 hover:shadow-xl transition">
             <h3 className="text-xl font-semibold mb-4">Starter</h3>
-            <div className="text-4xl font-bold text-blue-600 group-hover:text-white mb-2">
+            <div className="text-4xl font-bold bg-gradient-to-r from-primary-aqua to-secondary-blue bg-clip-text text-transparent group-hover:text-white mb-2">
               {formatPrice(pricing.starter)}
             </div>
             <ul className="text-sm text-gray-300 space-y-2 mt-4">
@@ -61,17 +61,17 @@ export default function PricingSection() {
               <li className="flex items-center gap-2"><FaCheck /> 1 long‑form edit</li>
               <li className="flex items-center gap-2"><FaCheck /> Stock music & assets</li>
             </ul>
-            <Link href="#cta" className="mt-6 inline-block text-blue-800 group-hover:text-white px-4 py-2 rounded font-semibold group-hover:outline group-hover:bg-transparent transition">
+            <Link href="#cta" className="mt-6 inline-block bg-gradient-to-r from-primary-aqua to-secondary-blue bg-clip-text text-transparent group-hover:text-theme-light px-4 py-2 rounded font-semibold group-hover:outline group-hover:bg-transparent transition">
               Choose Starter
             </Link>
           </div>
 
           {/* Pro */}
-          <div className="bg-white/5 group hover:scale-105 hover:bg-gradient-to-b hover:from-blue-800 hover:to-black duration-500 ease-in-out backdrop-blur-md rounded-xl p-8 hover:shadow-xl transition">
+          <div className="bg-white/5 group hover:scale-105 hover:bg-gradient-to-b hover:from-primary-aqua hover:to-theme-dark duration-500 ease-in-out backdrop-blur-md rounded-xl p-8 hover:shadow-xl transition">
             <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
               Pro <FaStar className="text-yellow-300" />
             </h3>
-            <div className="text-4xl font-bold text-blue-600 group-hover:text-white mb-2">
+            <div className="text-4xl font-bold bg-gradient-to-r from-primary-aqua to-secondary-blue bg-clip-text text-transparent group-hover:text-white mb-2">
               {formatPrice(pricing.pro)}
             </div>
             <ul className="text-sm space-y-2 mt-4">
@@ -81,18 +81,18 @@ export default function PricingSection() {
             </ul>
             <Link
               href="#cta"
-              className="mt-6 inline-block text-blue-800 group-hover:text-white px-4 py-2 rounded font-semibold group-hover:outline group-hover:bg-transparent transition"
+              className="mt-6 inline-block bg-gradient-to-r from-primary-aqua to-secondary-blue bg-clip-text text-transparent group-hover:text-theme-light px-4 py-2 rounded font-semibold group-hover:outline group-hover:bg-transparent transition"
             >
               Choose Pro
             </Link>
           </div>
 
           {/* Studio */}
-          <div className="bg-white/5 group hover:scale-105 hover:bg-gradient-to-b hover:from-blue-800 hover:to-black duration-500 ease-in-out backdrop-blur-md rounded-xl p-8 hover:shadow-xl transition">
+          <div className="bg-white/5 group hover:scale-105 hover:bg-gradient-to-b hover:from-primary-aqua hover:to-theme-dark duration-500 ease-in-out backdrop-blur-md rounded-xl p-8 hover:shadow-xl transition">
             <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
               Studio <FaCrown className="text-yellow-400" />
             </h3>
-            <div className="text-4xl font-bold text-blue-800 group-hover:text-white mb-2">
+            <div className="text-4xl font-bold bg-gradient-to-r from-primary-aqua to-secondary-blue bg-clip-text text-transparent group-hover:text-white mb-2">
               {formatPrice(pricing.studio)}
             </div>
             <ul className="text-sm text-gray-300 space-y-2 mt-4">
@@ -100,7 +100,7 @@ export default function PricingSection() {
               <li className="flex items-center gap-2"><FaCheck /> Dedicated editor</li>
               <li className="flex items-center gap-2"><FaCheck /> Weekly strategy call</li>
             </ul>
-            <Link href="#cta" className="mt-6 inline-block text-blue-800 group-hover:text-white px-4 py-2 rounded font-semibold group-hover:outline group-hover:bg-transparent transition">
+            <Link href="#cta" className="mt-6 inline-block bg-gradient-to-r from-primary-aqua to-secondary-blue bg-clip-text text-transparent group-hover:text-theme-light px-4 py-2 rounded font-semibold group-hover:outline group-hover:bg-transparent transition">
               Talk to Sales
             </Link>
           </div>

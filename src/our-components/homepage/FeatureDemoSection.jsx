@@ -60,8 +60,8 @@ export default function FeatureDemoSection() {
               className={`px-6 py-2 cursor-pointer rounded-full font-semibold tracking-wide transition-all duration-300
                 ${
                   selectedTab === id
-                    ? "bg-black text-white shadow-[0_0_12px_rgba(255,255,255,0.25)]"
-                    : "text-gray-400 hover:text-white hover:shadow-[0_0_12px_rgba(255,255,255,0.25)]"
+                    ? "bg-theme-dark text-theme-light shadow-[0_0_12px_rgba(255,255,255,0.25)]"
+                    : "text-gray-400 hover:text-theme-light hover:shadow-[0_0_12px_rgba(255,255,255,0.25)]"
                 }`}
             >
               {label}

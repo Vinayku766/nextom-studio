@@ -62,7 +62,7 @@ const BrandsSection = () => {
                 fill="currentColor"
                 width={20}
                 height={20}
-                className="text-gradient-to-r to-blue-800"
+                className="text-gradient-to-r from-primary-aqua to-secondary-blue"
               >
                 {brand.svg}
               </svg>

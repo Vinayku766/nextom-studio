@@ -22,7 +22,7 @@ const AboutSection = () => {
         <div className="flex-1 space-y-6">
           <h2 className="text-3xl md:text-4xl font-bold">
             About{' '}
-            <span className="text-blue-800 text-shadow-lg text-shadow-gray">
+            <span className="bg-gradient-to-r from-primary-aqua to-secondary-blue bg-clip-text text-transparent">
               Vipul Dagar
             </span>
           </h2>

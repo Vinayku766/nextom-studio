@@ -1,9 +1,9 @@
 @import 'tailwindcss';
 @theme{
-  --primary-color: #f6339a;
-  --secondary-color: #f0b100;
-  --theme-dark: #000;
-  --theme-light: #fff;
+  --color-primary-aqua: #50e3c2;
+  --color-secondary-blue: #1e40af;
+  --color-theme-dark: #000;
+  --color-theme-light: #fff;
   --font-poppins: "Poppins", sans-serif;
   --font-mont: "Montserrat", sans-serif;
   --font-roboto: "Roboto", sans-serif;

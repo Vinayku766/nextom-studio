@@ -61,14 +61,14 @@ const Footer = () => {
     >
       <Div className="absolute inset-0 z-0 overflow-hidden">
         <div className="absolute inset-0 flex justify-between px-10">
-          <div className="w-52 h-[500px] bg-gradient-to-t from-blue-800/90 via-blue-700/80 to-transparent blur-[100px] animate-aurora-vertical"></div>
-          <div className="w-40 h-[450px] bg-gradient-to-t from-blue-700/90 via-blue-600/80 to-transparent blur-[90px] animate-aurora-fade [animation-delay:1s]"></div>
+          <div className="w-52 h-[500px] bg-gradient-to-t from-primary-aqua/90 via-secondary-blue/80 to-transparent blur-[100px] animate-aurora-vertical"></div>
+          <div className="w-40 h-[450px] bg-gradient-to-t from-primary-aqua/90 via-secondary-blue/80 to-transparent blur-[90px] animate-aurora-fade [animation-delay:1s]"></div>
 
-          <div className="w-56 h-[550px] bg-gradient-to-t from-blue-600/90 via-blue-700/80 to-transparent blur-[120px] animate-aurora-wobble [animation-delay:2s]"></div>
-          <div className="w-44 h-[400px] bg-gradient-to-t from-blue-600/90 via-blue-500/80 to-transparent blur-[100px] animate-aurora-fade [animation-delay:3s]"></div>
+          <div className="w-56 h-[550px] bg-gradient-to-t from-primary-aqua/90 via-secondary-blue/80 to-transparent blur-[120px] animate-aurora-wobble [animation-delay:2s]"></div>
+          <div className="w-44 h-[400px] bg-gradient-to-t from-primary-aqua/90 via-secondary-blue/80 to-transparent blur-[100px] animate-aurora-fade [animation-delay:3s]"></div>
 
-          <div className="w-52 h-[480px] bg-gradient-to-t from-blue-800/90 via-blue-700/80 to-transparent blur-[110px] animate-aurora-vertical [animation-delay:4s]"></div>
-          <div className="w-40 h-[420px] bg-gradient-to-t from-blue-700/90 via-blue-600/80 to-transparent blur-[100px] animate-aurora-wobble [animation-delay:5s]"></div>
+          <div className="w-52 h-[480px] bg-gradient-to-t from-primary-aqua/90 via-secondary-blue/80 to-transparent blur-[110px] animate-aurora-vertical [animation-delay:4s]"></div>
+          <div className="w-40 h-[420px] bg-gradient-to-t from-primary-aqua/90 via-secondary-blue/80 to-transparent blur-[100px] animate-aurora-wobble [animation-delay:5s]"></div>
         </div>
       </Div>
 
@@ -94,28 +94,28 @@ const Footer = () => {
               collaborative approach.
             </p>
 
-            <div className="flex justify-center sm:justify-start gap-4 text-white/70 text-lg">
+            <div className="flex justify-center sm:justify-start gap-4 text-theme-light/70 text-lg">
               <Link
                 href="mailto:nextomstudio@gmail.com"
-                className="hover:text-blue-800 hover:scale-120 duration-300 transition"
+                className="hover:text-primary-aqua hover:scale-120 duration-300 transition"
               >
                 <IoMailOpenOutline />
               </Link>
               <Link
                 href="tel:+919315084010"
-                className="hover:text-blue-800 hover:scale-120 duration-300 transition"
+                className="hover:text-primary-aqua hover:scale-120 duration-300 transition"
               >
                 <FiPhone />
               </Link>
               <Link
                 href="https://www.instagram.com/nextomstudio/"
-                className="hover:text-blue-800 hover:scale-120 duration-300 transition"
+                className="hover:text-primary-aqua hover:scale-120 duration-300 transition"
               >
                 <FaInstagram />
               </Link>
               <Link
                 href="https://www.youtube.com/@nextomstudio8727"
-                className="hover:text-blue-800 hover:scale-120 duration-300 transition"
+                className="hover:text-primary-aqua hover:scale-120 duration-300 transition"
               >
                 <FiYoutube />
               </Link>
@@ -139,7 +139,7 @@ const Footer = () => {
                         href={link.href}
                         className="
                       text-sm 
-                      text-white/70 
+                      text-theme-light/70 
                       transition  
                       relative inline-block 
                       after:content-[''] 
@@ -149,12 +149,12 @@ const Footer = () => {
                       after:h-[3px]
                       after:w-0
                       after:bg-gradient-to-r
-                    after:from-blue-800
-                    after:to-purple-600
+                    after:from-primary-aqua
+                    after:to-secondary-blue
                       after:transition-all
                       after:duration-300
                       hover:after:w-full 
-                      hover:text-white 
+                      hover:text-theme-light 
                       hover:font-semibold"
                       >
                         {link.label}

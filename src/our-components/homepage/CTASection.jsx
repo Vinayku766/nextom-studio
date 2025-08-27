@@ -64,7 +64,7 @@ const sendEmail = async (e) => {
     <section id="cta" className="text-white py-20 px-4 relative z-2 overflow-hidden">
              <Div className='space-y-6 mb-25 text-center'>
           <h2 className="text-3xl md:text-4xl font-bold">
-            Ready to <span className="text-blue-600">launch your story</span>?
+            Ready to <span className="bg-gradient-to-r from-primary-aqua to-secondary-blue bg-clip-text text-transparent">launch your story</span>?
           </h2>
           <p className="text-gray-400">
             Share a brief and we’ll send a tailored plan with timelines and budget the same day.
@@ -109,13 +109,29 @@ const sendEmail = async (e) => {
               placeholder="Project details"
               className="w-full px-4 py-3 bg-white/10 text-white border border-white/20 rounded-md placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-pink-500"
             />
-            <button
-              disabled={loading}
-              type="submit"
-              className="w-full bg-blue-800 hover:bg-blue-900 cursor-pointer text-white font-semibold py-3 rounded-md transition"
-            >
-             {loading ? <ClipLoader size={20} color="#fff" /> : 'Send'}
-            </button>
+<button
+  disabled={loading}
+  type="submit"
+  className="
+    relative w-full overflow-hidden
+    font-semibold py-3 rounded-md text-white
+    bg-gradient-to-r from-primary-aqua to-secondary-blue cursor-pointer group
+  "
+>
+  <span
+    className="
+      absolute top-0 right-0 h-full
+      bg-secondary-blue
+      w-0 group-hover:w-full
+      transition-all duration-700 ease-in-out
+    "
+  ></span>
+  <span className="relative z-10 flex justify-center items-center">
+    {loading ? <ClipLoader size={20} color='#fff' /> : 'Send'}
+  </span>
+</button>
+
+
             <small className="text-gray-400 block text-center opacity-80" id="formNote">
               We'll get back to you within a few hours.
             </small>
