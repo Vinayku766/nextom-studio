@@ -48,7 +48,7 @@ const VideoSwiper = () => {
               key={image.id}
               onMouseEnter={() => setActiveIndex(index)}
               className={`
-                relative h-full cursor-pointer rounded-[1rem] overflow-hidden
+                relative h-full cursor-pointer overflow-hidden
                 transition-all duration-[0.8s]
                 [transition-timing-function:cubic-bezier(0.05,0.61,0.41,0.95)]
                 ${isActive ? 'flex-[8]' : isNeighbor ? 'flex-[1.25]' : 'flex-[1]'}
@@ -60,10 +60,11 @@ const VideoSwiper = () => {
                 className={`
                   h-full w-full object-cover
                   transition-all duration-[0.8s]
+                  rounded-[0.75rem] 
                   [transition-timing-function:cubic-bezier(0.05,0.61,0.41,0.95)]
-                  ${isActive || isNeighbor 
+                  ${isActive 
                     ? 'opacity-100 scale-100' 
-                    : 'opacity-50 scale-95'}
+                    : 'opacity-50 scale-80' && isNeighbor ? "opacity-100 scale-95": "opacity-50 scale-80"}
                 `}
                 loop
               />
