@@ -29,7 +29,7 @@ const PaymentPopup = () => {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-[1000]"
-          onClick={closePopup} // click outside closes popup
+          onClick={closePopup}
         >
           <motion.div
             initial={{ scale: 0.8, opacity: 0 }}
@@ -37,9 +37,8 @@ const PaymentPopup = () => {
             exit={{ scale: 0.8, opacity: 0 }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
             className="relative bg-white/10 backdrop-blur-xl border border-white/20 shadow-xl rounded-2xl p-8 w-[350px] text-center text-white"
-            onClick={(e) => e.stopPropagation()} // prevent closing when clicking inside
+            onClick={(e) => e.stopPropagation()}
           >
-            {/* Close button */}
             <button
               onClick={closePopup}
               className="absolute top-3 right-3 text-white/70 hover:text-white transition cursor-pointer"
@@ -48,7 +47,7 @@ const PaymentPopup = () => {
               <FiX className="w-6 h-6" />
             </button>
 
-            <h2 className="text-xl font-semibold mb-4">💳 Payment Options</h2>
+            <h2 className="text-xl font-semibold mb-4">💳 Payment Options / UPI</h2>
 
             <div className="flex justify-center mb-3">
               <img
