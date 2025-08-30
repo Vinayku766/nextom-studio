@@ -95,12 +95,15 @@ const Footer = () => {
             </p>
 
             <div className="flex justify-center sm:justify-start gap-4 text-theme-light/70 text-lg">
-              <Link
-                href="mailto:nextomstudio@gmail.com"
-                className="hover:text-primary-aqua hover:scale-120 duration-300 transition"
-              >
-                <IoMailOpenOutline />
-              </Link>
+        <Link
+  href="https://mail.google.com/mail/?view=cm&fs=1&to=nextomstudio@gmail.com"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="hover:text-primary-aqua hover:scale-110 duration-300 transition"
+>
+  <IoMailOpenOutline />
+</Link>
+
               <Link
                 href="tel:+919315084010"
                 className="hover:text-primary-aqua hover:scale-120 duration-300 transition"
@@ -120,8 +123,6 @@ const Footer = () => {
                 <FiYoutube />
               </Link>
             </div>
-
-            {/* Copyright */}
           </div>
 
           {/* Left: Links Section */}

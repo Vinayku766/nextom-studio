@@ -47,7 +47,7 @@ const PaymentPopup = () => {
               <FiX className="w-6 h-6" />
             </button>
 
-            <h2 className="text-xl font-semibold mb-4">💳 Payment Options / UPI</h2>
+            <h2 className="text-xl font-semibold mb-4">💳 Payment Options UPI</h2>
 
             <div className="flex justify-center mb-3">
               <img

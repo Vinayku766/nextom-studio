@@ -17,12 +17,13 @@ const sendEmail = async (e) => {
   e.preventDefault();
 
   const name = form.current[0].value.trim();
-  const email = form.current[1].value.trim();
-  const textArea = form.current[2].value.trim();
+  const phone = form.current[1].value.trim();
+  const email = form.current[2].value.trim();
+  const textArea = form.current[3].value.trim();
 
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-  if (!name || !email || !textArea) {
+  if (!name || !email || !phone || !textArea) {
     toast.error('Please enter all fields', {
       position: 'top-right',
       theme: 'colored',
@@ -38,11 +39,21 @@ const sendEmail = async (e) => {
     return;
   }
 
+  const cleanedPhone = phone.replace(/\D/g, "");
+
+  if(cleanedPhone.length < 10){
+     toast.error('Phone number must be at least 10 digits long', {
+      position: 'top-right',
+      theme: 'colored',
+    });
+    return;
+  }
+
   setLoading(true);
 
   try {
     await SendMailHook(form);
-    form.current.reset(); // optional: clear form after success
+    form.current.reset();
     toast.success('Query Sent Successfully!', {
       position: 'top-right',
       theme: 'dark',
@@ -96,18 +107,23 @@ const sendEmail = async (e) => {
             <input
               name="name"
               placeholder="Your name"
-              className="w-full px-4 py-3 bg-white/10 text-white border border-white/20 rounded-md placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-pink-500"
+              className="w-full px-4 py-3 bg-white/10 text-white border border-white/20 rounded-md placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-aqua"
+            />
+            <input
+              name="phone"
+              placeholder="Phone number"
+              className="w-full px-4 py-3 bg-white/10 text-white border border-white/20 rounded-md placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-aqua"
             />
             <input
               name="email"
               placeholder="Email"
-              className="w-full px-4 py-3 bg-white/10 text-white border border-white/20 rounded-md placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-pink-500"
+              className="w-full px-4 py-3 bg-white/10 text-white border border-white/20 rounded-md placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-aqua"
             />
             <textarea
               name="message"
               rows={4}
               placeholder="Project details"
-              className="w-full px-4 py-3 bg-white/10 text-white border border-white/20 rounded-md placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-pink-500"
+              className="w-full px-4 py-3 bg-white/10 text-white border border-white/20 rounded-md placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-aqua"
             />
 <button
   disabled={loading}
