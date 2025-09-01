@@ -49,7 +49,7 @@ export default function CustomNavbar() {
           <button   onClick={() => {
     setMobileOpen(false);
     openPopup();
-  }} className="btn bg-theme-light cursor-pointer font-extrabold text-secondary-blue ghost flex justify-center items-center border hover:scale-95 border-white/30 hover:border-white/50 transition px-3 py-1 rounded-md">
+  }} className="btn bg-theme-light cursor-pointer font-bold text-theme-dark ghost flex justify-center items-center border hover:scale-95 border-white/30 hover:border-white/50 transition px-3 py-1 rounded-md">
             Pay Online
           </button>
           <Link href="#cta" className="btn primary hover:scale-95 text-gray-100 border border-gray-100 hover:border-gray-300 transition px-3 py-1 rounded-md font-semibold">

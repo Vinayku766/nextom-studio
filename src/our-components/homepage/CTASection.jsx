@@ -69,8 +69,6 @@ const sendEmail = async (e) => {
     }
 };
 
-
-
   return (
     <section id="cta" className="text-white py-20 px-4 relative z-2 overflow-hidden">
              <Div className='space-y-6 mb-25 text-center'>
@@ -131,23 +129,12 @@ const sendEmail = async (e) => {
   className="
     relative w-full overflow-hidden
     font-semibold py-3 rounded-md text-white
-    bg-gradient-to-r from-primary-aqua to-secondary-blue cursor-pointer group
-  "
+    bg-gradient-to-r from-primary-aqua to-secondary-blue cursor-pointer"
 >
-  <span
-    className="
-      absolute top-0 right-0 h-full
-      bg-secondary-blue
-      w-0 group-hover:w-full
-      transition-all duration-700 ease-in-out
-    "
-  ></span>
   <span className="relative z-10 flex justify-center items-center">
-    {loading ? <ClipLoader size={20} color='#fff' /> : 'Send'}
+    {loading ? <ClipLoader size={20} color="#fff" /> : 'Send'}
   </span>
 </button>
-
-
             <small className="text-gray-400 block text-center opacity-80" id="formNote">
               We'll get back to you within a few hours.
             </small>

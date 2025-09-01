@@ -5,7 +5,7 @@ import Div from '../common/DIv'
 
 const HeroSection = () => {
   return (
-    <section id="top" className="relative w-full bg-black/50 text-white px-6 py-10 md:py-20">
+    <section id="top" className="relative w-full bg-gradient-to-r from-theme-dark/90 via-theme-dark/50 to-theme-light/10 text-white px-6 py-10 md:py-20">
       {/* Video Section (Background) */}
       <Div className="absolute top-0 left-0 w-full h-full -z-1 bg-gradient-to-b from-gray-400 to-gray-700">
         <video
@@ -18,7 +18,7 @@ const HeroSection = () => {
           className="w-full h-full object-cover"
         >
           <source
-            src="/videos/hero-background-video-2.mp4"
+            src="/videos/Hero-Back-2.mp4"
             type="video/mp4"
           />
         </video>
@@ -33,7 +33,7 @@ const HeroSection = () => {
           </span>
           <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
             Crafting{' '}
-            <span className="bg-gradient-to-r from-primary-aqua to-secondary-blue bg-clip-text text-transparent text-shadow-lg">
+            <span className="bg-gradient-to-r from-primary-aqua to-secondary-blue bg-clip-text text-transparent">
               Cinematic Stories
             </span>{' '}
             for Brands & Creators

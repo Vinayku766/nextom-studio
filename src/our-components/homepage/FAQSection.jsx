@@ -40,7 +40,7 @@ const FAQSection = () => {
           {faqData.map((faq, i) => (
             <details
               key={i}
-              className="group border border-white/10 bg-white/5 backdrop-blur-sm rounded-lg px-6 py-4 transition-all"
+              className="group border border-white/10 bg-white/5 hover:bg-theme-light/10 ease-in-out duration-300 backdrop-blur-sm rounded-lg px-6 py-4 transition-all"
             >
               <summary className="flex justify-between items-center cursor-pointer list-none text-white font-medium text-lg">
                 <span>{faq.question}</span>
