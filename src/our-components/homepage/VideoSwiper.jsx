@@ -32,7 +32,7 @@ const VideoSwiper = () => {
   }, [activeIndex]);
 
   return (
-    <Div className="relative w-full h-[400px] bg-theme-dark py-5">
+    <Div id="showcase" className="relative w-full h-[400px] bg-theme-dark py-5">
       <div className="flex overflow-x-auto gap-2 h-full scrollbar-hide">
         {images.map((image, index) => {
           const isActive = index === activeIndex;
