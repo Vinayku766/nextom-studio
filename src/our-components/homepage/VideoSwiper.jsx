@@ -7,14 +7,14 @@ const VideoSwiper = () => {
   const videoRefs = useRef({});
 
   const images = [
-    { id: "1", urls: { regular: "/videos/shorts/war-going.mp4" } },
-    { id: "2", urls: { regular: "/videos/shorts/alien-nextom.mp4" } },
-    { id: "3", urls: { regular: "/videos/shorts/get-2.mp4" } },
-    { id: "4", urls: { regular: "/videos/shorts/halloween-creepy.mp4" } },
-    { id: "5", urls: { regular: "/videos/shorts/advertisement.mp4" } },
-    { id: "6", urls: { regular: "/videos/shorts/beautiful.mp4" } },
-    { id: "7", urls: { regular: "/videos/shorts/batman-in-real-life.mp4" } },
-    { id: "8", urls: { regular: "/videos/shorts/bot-dance.mp4" } },
+    { id: "1", urls: { regular: "/videos/shorts/video-1-10.mp4" } },
+    { id: "2", urls: { regular: "/videos/shorts/video-1-2.mp4" } },
+    { id: "3", urls: { regular: "/videos/shorts/video-1-7.mp4" } },
+    { id: "4", urls: { regular: "/videos/shorts/video-1-13.mp4" } },
+    { id: "5", urls: { regular: "/videos/shorts/video-1-6.mp4" } },
+    { id: "6", urls: { regular: "/videos/shorts/video-1-8.mp4" } },
+    { id: "7", urls: { regular: "/videos/shorts/video-1-9.mp4" } },
+    { id: "8", urls: { regular: "/videos/shorts/video-1-5.mp4" } },
   ];
 
   useEffect(() => {

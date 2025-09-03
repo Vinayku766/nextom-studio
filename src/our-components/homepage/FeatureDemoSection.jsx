@@ -14,19 +14,19 @@ const tabs = [
   {
     id: "p2",
     label: "Commercial Cut",
-    img: "https://images.unsplash.com/photo-1543596322-7e16a72555f9?q=80&w=1170&auto=format&fit=crop",
+    img: "https://images.unsplash.com/photo-1600505782717-2f97b6df5ff8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Q29tbWVyY2lhbCUyMEN1dHxlbnwwfHwwfHx8MA%3D%3D",
     caption: "Shot-matching • Product beauty • SFX hits",
   },
   {
     id: "p3",
     label: "YouTube Pack",
-    img: "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1600&auto=format&fit=crop",
+    img: "https://images.unsplash.com/photo-1704018453307-d563498b585b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     caption: "Chapters • B-roll finder • Title pack",
   },
   {
     id: "p4",
     label: "Short-Form",
-    img: "https://images.unsplash.com/photo-1545235617-9465d2a55698?q=80&w=1600&auto=format&fit=crop",
+    img: "https://images.unsplash.com/photo-1678854575668-3a7e3c50d621?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     caption: "Vertical formats • Fast cuts • Trend hooks",
   },
 ];
