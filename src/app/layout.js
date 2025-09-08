@@ -20,7 +20,7 @@ export const metadata = {
   title: "Nextom Studio",
   description: "Nextom Studio is a full-service video editing studio specializing in cinematic brand films, YouTube content, trailers, podcasts, and short-form videos. We combine professional editing, color grading, sound design, motion graphics, and AI-enhanced tools to deliver fast, high-quality results.",
    icons:{
-    icon: '/logo/LOGO3.png'
+    icon: '/logo/logo.png'
    }
 };
 

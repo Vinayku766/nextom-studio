@@ -18,7 +18,7 @@ const HeroSection = () => {
           className="w-full h-full object-cover"
         >
           <source
-            src="/videos/hero-background-video.mp4"
+            src="/videos/shorts/video-1.mp4"
             type="video/mp4"
           />
         </video>
