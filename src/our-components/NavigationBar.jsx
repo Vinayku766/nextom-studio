@@ -78,9 +78,12 @@ export default function CustomNavbar() {
             <Link href="#faq" onClick={() => setMobileOpen(false)}>FAQ</Link>
           </nav>
           <div className="flex flex-col gap-2 mt-3">
-            <Link href="#cta" onClick={() => setMobileOpen(false)} className="btn ghost border border-white/30 px-4 py-2 rounded-md text-theme-light text-center">
-              Contact
-            </Link>
+            <button   onClick={() => {
+    setMobileOpen(false);
+    openPopup();
+  }} className="btn bg-theme-light cursor-pointer font-bold text-theme-dark ghost flex justify-center items-center border hover:scale-95 border-white/30 hover:border-white/50 transition px-3 py-1 rounded-md">
+            Pay Online
+          </button>
             <Link href="#cta" onClick={() => setMobileOpen(false)} className="btn primary bg-theme-light text-black px-4 py-2 rounded-md text-center font-semibold">
               Get Started
             </Link>
