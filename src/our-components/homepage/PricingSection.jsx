@@ -25,15 +25,15 @@ export default function PricingSection() {
 
   const formatPrice = (priceUSD) => {
     let finalPrice = isUSD ? priceUSD : priceUSD * exchangeRate;
-    finalPrice = isUSD ? priceUSD : Math.round(finalPrice);
+    finalPrice = isUSD ? priceUSD.toFixed(2) : Math.round(finalPrice);
 
     return isYearly
       ? isUSD
         ? `$${finalPrice} /yr`
-        : `₹${finalPrice} /yr`
+        : `₹${finalPrice.toLocaleString("en-IN")} /yr`
       : isUSD
         ? `$${finalPrice}/mo`
-        : `₹${finalPrice}/mo`;
+        : `₹${finalPrice.toLocaleString("en-IN")}/mo`;
   };
 
   return (
@@ -103,7 +103,7 @@ export default function PricingSection() {
               <li className="flex items-center gap-2"><FaCheck /> 1 long-form edit</li>
               <li className="flex items-center gap-2"><FaCheck /> Stock music & assets</li>
             </ul>
-            <button onClick={() => openPopup()} className="mt-6 inline-block bg-gradient-to-r from-primary-aqua to-secondary-blue bg-clip-text text-transparent group-hover:text-theme-light px-4 py-2 rounded font-semibold group-hover:outline group-hover:bg-transparent transition">
+            <button onClick={() => openPopup(pricingUSD.starter * exchangeRate)} className="mt-6 cursor-pointer inline-block bg-gradient-to-r from-primary-aqua to-secondary-blue bg-clip-text text-transparent group-hover:text-theme-light px-4 py-2 rounded font-semibold group-hover:outline group-hover:bg-transparent transition">
               Choose Starter
             </button>
           </div>
@@ -121,8 +121,8 @@ export default function PricingSection() {
               <li className="flex items-center gap-2"><FaCheck /> Priority turnaround</li>
             </ul>
             <button
-              onClick={() => openPopup()}
-              className="mt-6 inline-block bg-gradient-to-r from-primary-aqua to-secondary-blue bg-clip-text text-transparent group-hover:text-theme-light px-4 py-2 rounded font-semibold group-hover:outline group-hover:bg-transparent transition"
+              onClick={() => openPopup(pricingUSD.pro * exchangeRate)}
+              className="mt-6 inline-block cursor-pointer bg-gradient-to-r from-primary-aqua to-secondary-blue bg-clip-text text-transparent group-hover:text-theme-light px-4 py-2 rounded font-semibold group-hover:outline group-hover:bg-transparent transition"
             >
               Choose Pro
             </button>
@@ -140,7 +140,7 @@ export default function PricingSection() {
               <li className="flex items-center gap-2"><FaCheck /> Dedicated editor</li>
               <li className="flex items-center gap-2"><FaCheck /> Weekly strategy call</li>
             </ul>
-            <button onClick={() => openPopup()} className="mt-6 inline-block bg-gradient-to-r from-primary-aqua to-secondary-blue bg-clip-text text-transparent group-hover:text-theme-light px-4 py-2 rounded font-semibold group-hover:outline group-hover:bg-transparent transition">
+            <button onClick={() => openPopup(pricingUSD.studio * exchangeRate)} className="mt-6 cursor-pointer inline-block bg-gradient-to-r from-primary-aqua to-secondary-blue bg-clip-text text-transparent group-hover:text-theme-light px-4 py-2 rounded font-semibold group-hover:outline group-hover:bg-transparent transition">
               Choose Studio
             </button>
           </div>

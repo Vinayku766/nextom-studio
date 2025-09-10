@@ -6,12 +6,19 @@ const PopupContext = createContext();
 
 const PopupProviderHook = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [popUpPrice, setPopUpPrice] = useState(null);
 
-  const openPopup = () => setIsOpen(true);   // fixed naming
-  const closePopup = () => setIsOpen(false); // fixed naming
+  const openPopup = (price) => {
+    setPopUpPrice(price);
+    setIsOpen(true)
+  };
+  const closePopup = () => {
+    setPopUpPrice(null);
+    setIsOpen(false)
+  }; // fixed naming
 
   return (
-    <PopupContext.Provider value={{ isOpen, openPopup, closePopup }}>
+    <PopupContext.Provider value={{ popUpPrice, isOpen, openPopup, closePopup }}>
       {children}
     </PopupContext.Provider>
   );

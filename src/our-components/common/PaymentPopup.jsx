@@ -4,12 +4,11 @@ import Link from 'next/link';
 import { usePopup } from '@/utils/PopupProviderHook'
 import { motion, AnimatePresence } from 'framer-motion'
 import { FaPaypal } from "react-icons/fa";
-import { FiX } from "react-icons/fi"; // close icon
+import { FiX } from "react-icons/fi";
 
 const PaymentPopup = () => {
-  const { isOpen, closePopup } = usePopup();
+  const { popUpPrice, isOpen, closePopup } = usePopup();
 
-  // ✅ Prevent background scroll when popup is open
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
@@ -46,8 +45,11 @@ const PaymentPopup = () => {
             >
               <FiX className="w-6 h-6" />
             </button>
+            
+            {popUpPrice && <h2 className='text-2xl font-bold mb-3'>₹&nbsp;{Math.round(popUpPrice).toLocaleString("en-IN")}</h2>}
 
             <h2 className="text-xl font-semibold mb-4">💳 Payment Options UPI</h2>
+           
 
             <div className="flex justify-center mb-3">
               <img
