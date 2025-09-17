@@ -12,9 +12,9 @@ export default function PricingSection() {
   const exchangeRate = 88.2; 
 
   const basePricingUSD = {
-    starter: 299,
-    pro: 799,
-    studio: 1499,
+    starter: 175,
+    pro: 300,
+    studio: 510,
   };
 
   const pricingUSD = {
@@ -46,7 +46,7 @@ export default function PricingSection() {
           Flexible plans for creators, startups, and teams. Switch between monthly and yearly anytime.
         </p>
 
-        <div className='flex justify-center gap-5 items-center'>
+        <div className='flex justify-center gap-5 items-center flex-wrap'>
           <div className="flex justify-center items-center gap-4 mb-12">
             <span className="text-gray-300">INR</span>
             <button

@@ -23,13 +23,11 @@ const AboutSection = () => {
           <h2 className="text-3xl md:text-4xl font-bold">
             About{' '}
             <span className="bg-gradient-to-r from-primary-aqua to-secondary-blue bg-clip-text text-transparent">
-              Vipul Dagar
+              Nextom Studio
             </span>
           </h2>
           <p className="text-white/70 leading-relaxed text-lg">
-            I’m Vipul Dagar — a video editor with <b className="text-white">7+ years</b> crafting ads, music videos,
-            shorts, and long‑form content for brands and creators. I combine clean pacing, cinematic color, and punchy
-            sound design to keep attention from the first second to the last.
+      Nextom Studio is a creative powerhouse with over <b className="text-white">7 years</b> of expertise in crafting dynamic, visually stunning content. Specializing in ads, music videos, digital shorts, and long-form storytelling, we blend cinematic techniques, sharp pacing, and immersive sound design to captivate audiences from the first frame to the last. Whether working with brands or creators, our mission is to deliver impactful narratives that resonate and engage.
           </p>
 
           {/* Skills Grid */}
