@@ -100,14 +100,14 @@ const Contact = () => {
                 Send Us a Message
               </h4>
               <p className="text-gray-300 max-w-lg text-base md:text-lg">
-                Let's make your brand videos unforgettable. Share your
+                {`Let's make your brand videos unforgettable. Share your
                 requirements with us and we'll get in touch with you in less
-                than 24 hours — promise!
+                than 24 hours — promise!`}
               </p>
             </div>
 
             <h5 className="text-white/80 font-semibold text-lg">
-              Let's Create Something that Lasts.
+              {`Let's Create Something that Lasts.`}
             </h5>
           </div>
            <div
@@ -155,7 +155,7 @@ const Contact = () => {
               className="text-gray-400 block text-center opacity-80"
               id="formNote"
             >
-              We'll get back to you within a few hours.
+              {`We'll get back to you within a few hours.`}
             </small>
           </form>
           </div>

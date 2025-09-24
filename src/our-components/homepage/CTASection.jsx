@@ -135,7 +135,7 @@ const sendEmail = async (e) => {
   </span>
 </button>
             <small className="text-gray-400 block text-center opacity-80" id="formNote">
-              We'll get back to you within a few hours.
+              {`We'll get back to you within a few hours.`}
             </small>
           </form>
         </motion.div>
