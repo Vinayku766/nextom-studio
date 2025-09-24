@@ -91,7 +91,7 @@ const Contact = () => {
               </span>
             </h2>
             <h1 className="font-bold text-3xl md:text-4xl leading-snug text-white">
-              The first step to your cinematic journey starts here,
+              The first step to your cinematic journey starts here.
               <br /> Get in touch with us.
             </h1>
 
