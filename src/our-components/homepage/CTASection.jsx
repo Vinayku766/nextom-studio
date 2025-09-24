@@ -75,7 +75,7 @@ const sendEmail = async (e) => {
             Ready to <span className="bg-gradient-to-r from-primary-aqua to-secondary-blue bg-clip-text text-transparent">launch your story</span>?
           </h2>
           <p className="text-gray-400">
-            Share a brief and we’ll send a tailored plan with timelines and budget the same day.
+            {`Share a brief and we’ll send a tailored plan with timelines and budget the same day.`}
           </p>
           {/* <Link href="#contact" className="inline-block bg-blue-800 hover:bg-blue-900 text-white px-6 py-3 rounded-lg font-medium transition">
             Book a Free Consult

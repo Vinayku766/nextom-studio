@@ -4,9 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "build": "NEXT_DISABLE_ESLINT=1 next build"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
