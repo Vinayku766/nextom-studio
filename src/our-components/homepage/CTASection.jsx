@@ -1,6 +1,5 @@
 'use client'
 import { useState, useRef } from 'react'
-import Link from 'next/link'
 import { toast } from 'react-toastify';
 import SendMailHook from '@/utils/SendMailHook';
 import { ClipLoader } from 'react-spinners';
@@ -96,7 +95,7 @@ const sendEmail = async (e) => {
         {/* Form */}
   
         <motion.div 
-         variants={slideIn('right', 'tween', 0.2, 1)}
+       variants={slideIn('right', 'tween', 0.2, 1)}
          initial="hidden"
          whileInView="show"
           viewport={{once: true}}
@@ -140,7 +139,6 @@ const sendEmail = async (e) => {
             </small>
           </form>
         </motion.div>
-
       </div>
     </section>
   )

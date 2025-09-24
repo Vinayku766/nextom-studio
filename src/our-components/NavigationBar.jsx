@@ -37,11 +37,12 @@ export default function CustomNavbar() {
 
         {/* Desktop nav links */}
         <nav className="hidden md:flex items-center gap-6 text-theme-light" aria-label="Primary">
-        <Link href="#features" className={linkUnderlineClasses}>Features</Link>
-      <Link href="#about" className={linkUnderlineClasses}>About</Link>
-      <Link href="#showcase" className={linkUnderlineClasses}>Showcase</Link>
-      <Link href="#pricing" className={linkUnderlineClasses}>Pricing</Link>
-      <Link href="#faq" className={linkUnderlineClasses}>FAQ</Link>
+        <Link href="/#features" className={linkUnderlineClasses}>Features</Link>
+      {/* <Link href="#showcase" className={linkUnderlineClasses}>Showcase</Link> */}
+      <Link href="/#pricing" className={linkUnderlineClasses}>Pricing</Link>
+      <Link href="/#faq" className={linkUnderlineClasses}>FAQ</Link>
+      <Link href="/#about" className={linkUnderlineClasses}>About</Link>
+      <Link href="/contact" className={linkUnderlineClasses}>Contact</Link>
         </nav>
 
         {/* CTA buttons */}
@@ -71,11 +72,12 @@ export default function CustomNavbar() {
       {mobileOpen && (
         <div className="md:hidden bg-[#05080c]/90 backdrop-blur-lg border-t border-white/10 px-4 py-4 text-theme-light space-y-3">
           <nav className="flex flex-col space-y-2" aria-label="Mobile Menu">
-            <Link href="#features" onClick={() => setMobileOpen(false)}>Features</Link>
-            <Link href="#about" onClick={() => setMobileOpen(false)}>About</Link>
-            <Link href="#showcase" onClick={() => setMobileOpen(false)}>Showcase</Link>
-            <Link href="#pricing" onClick={() => setMobileOpen(false)}>Pricing</Link>
-            <Link href="#faq" onClick={() => setMobileOpen(false)}>FAQ</Link>
+            <Link href="/#features" onClick={() => setMobileOpen(false)}>Features</Link>
+            {/* <Link href="#showcase" onClick={() => setMobileOpen(false)}>Showcase</Link> */}
+            <Link href="/#pricing" onClick={() => setMobileOpen(false)}>Pricing</Link>
+            <Link href="/#faq" onClick={() => setMobileOpen(false)}>FAQ</Link>
+            <Link href="/#about" onClick={() => setMobileOpen(false)}>About</Link>
+            <Link href="/contact" onClick={() => setMobileOpen(false)}>Contact</Link>
           </nav>
           <div className="flex flex-col gap-2 mt-3">
             <button  onClick={() => {
