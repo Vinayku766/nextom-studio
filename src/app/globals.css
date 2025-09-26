@@ -9,6 +9,10 @@
   --font-roboto: "Roboto", sans-serif;
 }
 
+html, body{
+  scroll-behavior: smooth;
+}
+
 .box {
   --mask:
     radial-gradient(335.41px at 50% 450px,#000 99%,#0000 101%) calc(50% - 300px) 0/600px 100%,
