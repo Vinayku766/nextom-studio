@@ -3,8 +3,6 @@ import {useState, useRef} from 'react';
 import SendMailHook from '@/utils/SendMailHook';
 import { toast } from 'react-toastify';
 import { ClipLoader } from 'react-spinners';
-// import {motion} from "framer-motion";
-// import { slideIn } from '@/utils/motion';
 import Div from '@/our-components/common/DIv';
 
 const Contact = () => {
@@ -78,7 +76,6 @@ const Contact = () => {
       className="relative overflow-hidden border-t border-b border-white/10"
       style={backgroundStyle}
     >
-      {/* Subtle gradient background overlay */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent/80 pointer-events-none"></div>
       <Div className="bg-black/40 pt-24 pb-20">
         <div className="relative max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 px-6 text-white">
@@ -161,7 +158,6 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* Bottom Section */}
         <div className="relative container mx-auto mt-16 px-6">
           <div className="p-6 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 shadow-lg shadow-black/30">
             <h4 className="text-xl font-semibold text-white mb-2">
