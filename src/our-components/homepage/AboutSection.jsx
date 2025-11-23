@@ -10,12 +10,13 @@ const AboutSection = () => {
         {/* Avatar */}
         <div className="shrink-0 w-75 h-75 md:w-52 md:h-52 rounded-full overflow-hidden">
           <Image
-            src="/User/Vipul-Dagar.png"
-            alt="Vipul Dagar portrait"
+            src="/logo/logo.png"
+            alt="Nextom Studio Logo"
             width={208}
             height={208}
-            className="w-full h-full object-cover scale-115 -translate-x-[20px] translate-y-[20px] md:scale-120 md:-translate-x-[20px]"
+            className="w-full h-full object-cover"
           />
+          {/* scale-115 -translate-x-[20px] translate-y-[20px] md:scale-120 md:-translate-x-[20px] */}
         </div>
 
         {/* Content */}
