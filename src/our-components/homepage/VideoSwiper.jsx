@@ -3,9 +3,8 @@ import React, { useState, useRef, useEffect } from 'react';
 import Div from '../common/DIv';
 
 const VideoSwiper = () => {
-  const [activeIndex, setActiveIndex] = useState(null);
   const videoRefs = useRef({});
-
+  
   const images = [
     { id: "1", urls: { regular: "/videos/shorts/video-1-10.mp4" } },
     { id: "2", urls: { regular: "/videos/shorts/video-1-2.mp4" } },
@@ -16,7 +15,8 @@ const VideoSwiper = () => {
     { id: "7", urls: { regular: "/videos/shorts/video-1-9.mp4" } },
     { id: "8", urls: { regular: "/videos/shorts/video-1-5.mp4" } },
   ];
-
+  const [activeIndex, setActiveIndex] = useState(Math.floor(images.length / 2));
+  
   useEffect(() => {
     Object.values(videoRefs.current).forEach((vid, index) => {
       if (!vid) return;
