@@ -1,6 +1,7 @@
 'use client'
-import React from 'react'
-import Div from '../common/DIv'
+import React from 'react';
+import Link from "next/link";
+import Div from '../common/DIv';
 
 
 const HeroSection = () => {
@@ -49,18 +50,18 @@ const HeroSection = () => {
 
           {/* Actions */}
           <div className="flex flex-wrap gap-4">
-            <a
+            <Link
               href="#cta"
               className="px-6 py-3 rounded-md bg-white text-black font-semibold hover:bg-gray-200 transition"
             >
               Start a Project
-            </a>
-            <a
+            </Link>
+            <Link
               href="#showcase"
               className="px-6 py-3 rounded-md border border-white/30 text-white hover:border-white transition"
             >
               Watch Showreel
-            </a>
+            </Link>
               {/* <a
               href="#showcase"
               className="px-6 py-3 rounded-md border border-white/30 text-white hover:border-white transition"

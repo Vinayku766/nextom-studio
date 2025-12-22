@@ -11,7 +11,7 @@ const sections = [
   {
     title: "Home",
     links: [
-      { label: "About Us", href: "/about" },
+      { label: "About Us", href: "/aboutus" },
       { label: "Our Team", href: "/team" },
       { label: "Careers", href: "/careers" },
       { label: "Contact", href: "/contact" },

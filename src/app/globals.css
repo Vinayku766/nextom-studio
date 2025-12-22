@@ -47,23 +47,6 @@ html, body{
 }
 
 
-/* @keyframes aurora-vertical {
-  0%, 100% {
-    transform: scaleY(1);
-    opacity: 0.6;
-  }
-  50% {
-    transform: scaleY(1.4);
-    opacity: 1;
-  }
-}
-
-
-.animate-aurora-vertical {
-  animation: aurora-vertical 6s ease-in-out infinite;
-} */
-
-
 @keyframes marquee {
   0% {
     transform: translateX(0%);
@@ -80,4 +63,10 @@ html, body{
 .animate-marquee:hover{
    animation-play-state: paused;
 }
+
+
+
+
+
+
 
