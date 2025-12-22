@@ -1,6 +1,5 @@
-"use client";
+'use client';
 import Link from "next/link";
-import Image from "next/image";
 import { FaFilm, FaPalette, FaVideo } from "react-icons/fa";
 
 const ServiceCard = ({ title, items, icon }) => (
