@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { IoMailOpenOutline } from "react-icons/io5";
 import { FaInstagram } from "react-icons/fa";
 import { FiPhone, FiYoutube } from "react-icons/fi";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Div from './common/DIv';
 
 const sections = [
@@ -48,7 +48,23 @@ const sections = [
 ];
 
 const Footer = () => {
+  const videoRef = useRef(null);
   const [openIndex, setOpenIndex] = useState(null);
+
+    const handleMouseEnter = () => {
+    const video = videoRef.current
+    if (!video) return
+
+    video.play()
+  }
+
+  const handleMouseLeave = () => {
+    const video = videoRef.current
+    if (!video) return
+
+    video.pause()
+    video.currentTime = 0
+  }
 
   const toggleAccordion = (index) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -76,14 +92,15 @@ const Footer = () => {
       <Div className="mx-auto px-6 max-w-7xl bg-white/5 backdrop-blur-md border border-white/10 rounded-xl shadow-lg py-4 relative z-10">
         <div className="flex flex-col sm:flex-row justify-between gap-8 py-3">
           <div className="w-full sm:w-1/3 text-center sm:text-left space-y-4">
-            <div className="flex justify-center sm:justify-start items-center gap-3 font-semibold">
-              <Image
+            <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className="flex justify-center sm:justify-start items-center gap-3 font-semibold">
+              {/* <Image
                 src="/logo/logo.png"
                 alt="Nextom logo"
                 width={38}
                 height={38}
                 className="rounded-full"
-              />
+              /> */}
+              <video ref={videoRef} className='w-12 h-12 rounded-full cursor-pointer' src="./logo/roataion-logo.mp4" loop playsInline muted/>
               <span className="text-lg">Nextom Studio</span>
             </div>
             <p className="text-sm text-white/70 leading-relaxed">

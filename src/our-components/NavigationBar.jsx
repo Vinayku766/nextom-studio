@@ -1,12 +1,27 @@
 "use client"
-import { useState } from "react"
+import { useState, useRef } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { usePopup } from "@/utils/PopupProviderHook";
 
 export default function CustomNavbar() {
+  const videoRef = useRef(null);
   const [mobileOpen, setMobileOpen] = useState(false);
  const { openPopup } = usePopup(); 
+  const handleMouseEnter = () => {
+    const video = videoRef.current
+    if (!video) return
+
+    video.play()
+  }
+
+  const handleMouseLeave = () => {
+    const video = videoRef.current
+    if (!video) return
+
+    video.pause()
+    video.currentTime = 0
+  }
 
   const linkUnderlineClasses = `
   relative inline-block
@@ -30,8 +45,9 @@ export default function CustomNavbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
 
         {/* Logo */}
-        <Link className="flex items-center gap-3" href={"/"}>
-          <Image src="/logo/logo.png" alt="Nextom Studio" width={42} height={42} />
+        <Link className="flex items-center gap-3" href={"/"} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+          <video className="w-12 h-12 rounded-full" ref={videoRef}  src="./logo/roataion-logo.mp4" playsInline loop muted/>
+          {/* <Image src="/logo/fixed-logo-real.png" alt="Nextom Studio" width={42} height={42} /> */}
           <span className="text-theme-light font-semibold text-lg">Nextom Studio</span>
         </Link>
 

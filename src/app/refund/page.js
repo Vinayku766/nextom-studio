@@ -13,28 +13,28 @@ const page = () => {
          <p>At Nextom Studio, we are committed to delivering high-quality services at fair and transparent prices. {<br />} Our goal is to ensure that every client is satisfied with the work we provide. Following are the policies regarding payment: 
          </p>
        </div>
-        <div className="bg-white shadow-md rounded-xl p-8 mt-10">
+        <div className="shadow-md rounded-xl p-8 mt-10">
               <div className="grid gap-8">
           {/* Advance Payment */}
-          <div className="p-6 rounded-2xl shadow-lg border border-gray-200 hover:shadow-xl transition">
-            <h3 className="text-xl font-semibold text-primary mb-4">
+          <div className="p-6 rounded-2xl shadow-lg border border-white/20 hover:shadow-xl transition">
+            <h3 className="text-xl font-semibold text-white mb-4">
               1. Advance Payment
             </h3>
-            <p className="leading-relaxed text-gray-600">
+            <p className="leading-relaxed text-white/70">
               For all services (Video Production, Editing, Graphic Designing,
               Influencer Marketing, etc.), we require{" "}
-              <span className="font-medium text-gray-900">50% advance payment</span>{" "}
+              <span className="font-medium text-white/70">50% advance payment</span>{" "}
               at the time of confirming the purchase order. Work begins only
               after the advance payment is received.
             </p>
           </div>
 
           {/* Cancellations & Refunds */}
-          <div className="p-6 rounded-2xl shadow-lg border border-gray-200 hover:shadow-xl transition">
-            <h3 className="text-xl font-semibold text-primary mb-4">
+          <div className="p-6 rounded-2xl shadow-lg border border-white/20 hover:shadow-xl transition">
+            <h3 className="text-xl font-semibold text-white mb-4">
               2. Cancellations & Refunds
             </h3>
-            <ul className="list-disc pl-5 space-y-2 text-gray-600">
+            <ul className="list-disc pl-5 space-y-2 text-white/70">
               <li>
                 If the project is <span className="font-medium">not yet started</span>,
                 you’ll be eligible for a complete refund.
@@ -48,18 +48,18 @@ const page = () => {
                 refunds may not apply, unless otherwise specified in the contract.
               </li>
             </ul>
-            <p className="mt-3 text-gray-600">
+            <p className="mt-3 text-white/70">
               The exact refund amount will be clearly communicated and documented in
               the agreement before the work begins.
             </p>
           </div>
 
           {/* Refund Processing */}
-          <div className="p-6 rounded-2xl shadow-lg border border-gray-200 hover:shadow-xl transition">
-            <h3 className="text-xl font-semibold text-primary mb-4">
+          <div className="p-6 rounded-2xl shadow-lg border border-white/20 hover:shadow-xl transition">
+            <h3 className="text-xl font-semibold text-white mb-4">
               3. Refund Processing
             </h3>
-            <p className="leading-relaxed text-gray-600">
+            <p className="leading-relaxed text-white/70">
               If a refund is approved by our team, it will be processed within{" "}
               <span className="font-medium">5-8 working days</span> and credited to the{" "}
               <span className="font-medium">original payment method</span>. A small
@@ -69,11 +69,11 @@ const page = () => {
           </div>
 
           {/* Company Rights */}
-          <div className="p-6 rounded-2xl shadow-lg border border-gray-200 hover:shadow-xl transition">
-            <h3 className="text-xl font-semibold text-primary mb-4">
+          <div className="p-6 rounded-2xl shadow-lg border border-white/20 hover:shadow-xl transition">
+            <h3 className="text-xl font-semibold text-white mb-4">
               4. Company Rights
             </h3>
-            <p className="leading-relaxed text-gray-600">
+            <p className="leading-relaxed text-white/70">
               We reserve the right to withhold or cancel any order if it does not
               align with our real-time policies or business values. In such cases,
               our representative will contact you through your registered email ID

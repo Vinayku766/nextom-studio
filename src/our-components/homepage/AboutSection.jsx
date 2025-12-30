@@ -1,21 +1,41 @@
 'use client'
-import Image from 'next/image'
 import Div from '../common/DIv'
+import { useRef } from 'react'
 
 const AboutSection = () => {
+  const videoRef = useRef(null);
+
+  const handleMouseEnter = () => {
+    const video = videoRef.current
+    if (!video) return
+
+    video.play()
+  }
+
+  const handleMouseLeave = () => {
+    const video = videoRef.current
+    if (!video) return
+
+    video.pause()
+    video.currentTime = 0
+  }
+
   return (
     <section id="about" className="bg-black text-white py-10 px-6 relative">
       <Div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-20">
         
         {/* Avatar */}
-        <div className="shrink-0 w-75 h-75 md:w-52 md:h-52 rounded-full overflow-hidden">
-          <Image
+        <div className="shrink-0 w-75 h-75 md:w-52 md:h-52 rounded-full overflow-hidden"      
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}>
+          {/* <Image
             src="/logo/logo.png"
             alt="Nextom Studio Logo"
             width={208}
             height={208}
             className="w-full h-full object-cover"
-          />
+          /> */}
+          <video ref={videoRef} className='w-55 h-55' src="/logo/logo-rotation.mp4" loop muted playsInline/>
           {/* scale-115 -translate-x-[20px] translate-y-[20px] md:scale-120 md:-translate-x-[20px] */}
         </div>
 

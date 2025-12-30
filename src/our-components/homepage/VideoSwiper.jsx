@@ -49,8 +49,7 @@ const VideoSwiper = () => {
   onMouseEnter={() => setActiveIndex(index)}
   className={`
     relative h-full cursor-pointer overflow-hidden
-    transition-all duration-[0.8s] 
-    [transition-timing-function:cubic-bezier(0.05,0.61,0.41,0.95)]
+    transition-all duration-[0.8s][transition-timing-function:cubic-bezier(0.05,0.61,0.41,0.95)]
     ${isActive ? 'flex-[8]' : isNeighbor ? 'flex-[1.25]' : 'flex-[1]'}
   `}
 >
@@ -59,10 +58,9 @@ const VideoSwiper = () => {
     src={image.urls.regular}
     className={`
       absolute inset-0 w-full h-full
-      object-cover   /* 🔥 ensures full height, no gaps */
+      object-cover 
       transition-all duration-[0.8s]
-      rounded-[0.75rem]
-      [transition-timing-function:cubic-bezier(0.05,0.61,0.41,0.95)]
+      rounded-[0.75rem][transition-timing-function:cubic-bezier(0.05,0.61,0.41,0.95)]
       ${isActive 
         ? 'opacity-100 scale-100' 
         : isNeighbor 

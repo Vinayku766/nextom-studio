@@ -105,14 +105,14 @@ const page = () => {
             All the terms apply to all visitors, users, and clients who wish to access or use our services. By visiting this website, you voluntarily agree to be bound by these Terms. If you disagree with any part of these Terms, please discontinue the use of our Website and Services immediately. We encourage all visitors to review this page periodically for the latest version of our Terms.
          </p>
        </div>
-        <div className="bg-white shadow-md rounded-xl p-8 mt-10">
+        <div className="bg-white/10 border border-white/20 shadow-md rounded-xl p-8 mt-10">
         <div className="space-y-8">
           {sections.map((section) => (
             <div key={section.id}>
-              <h2 className="text-lg font-semibold text-gray-900 mb-2">
+              <h2 className="text-lg font-semibold text-white mb-2">
                 {section.id}. {section.title}
               </h2>
-              <div className="text-gray-700 text-sm leading-relaxed">
+              <div className="text-white/70 text-sm leading-relaxed">
                 {section.content}
               </div>
             </div>
