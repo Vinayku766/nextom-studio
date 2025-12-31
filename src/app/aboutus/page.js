@@ -3,7 +3,6 @@ import Image from "next/image"
 import { motion } from 'framer-motion'
 
 const page = () => {
-  // Stagger container for multiple items
   const staggerContainer = {
     hidden: {},
     show: { transition: { staggerChildren: 0.3 } },
@@ -34,15 +33,13 @@ const page = () => {
       id="about"
       className="relative bg-black text-white px-6 md:px-20 py-24 overflow-hidden"
     >
-      {/* Background Glow */}
       <div
-        className="absolute top-[-220px] left-1/2 -translate-x-1/2 w-[900px] h-[900px]
-        bg-gradient-to-b from-primary-aqua/50 via-secondary-blue/30 to-transparent
+        className="absolute -top-55 left-1/2 -translate-x-1/2 w-225 h-225
+        bg-linear-to-b from-primary-aqua/50 via-secondary-blue/30 to-transparent
         rounded-full blur-[160px] opacity-80 pointer-events-none"
       />
 
       <div className="relative max-w-6xl mx-auto space-y-28">
-        {/* ================= HERO ================= */}
         <motion.div
           className="text-center max-w-4xl mx-auto"
           initial="hidden"
@@ -62,7 +59,7 @@ const page = () => {
             variants={fadeUp}
           >
             Turning Ideas Into
-            <span className="block bg-gradient-to-r from-primary-aqua to-secondary-blue bg-clip-text text-transparent">
+            <span className="block bg-linear-to-r from-primary-aqua to-secondary-blue bg-clip-text text-transparent">
               Cinematic Reality
             </span>
           </motion.h1>
@@ -77,17 +74,14 @@ const page = () => {
             on-time delivery — always.
           </motion.p>
         </motion.div>
-
-        {/* ================= FOUNDER IMAGE + TEXT ================= */}
         <motion.div
           className="flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-8"
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
         >
-          {/* Founder Image */}
           <motion.div
-            className="flex-shrink-0 w-40 h-40 rounded-full overflow-hidden border border-white/20"
+            className="shrink-0 w-40 h-40 rounded-full overflow-hidden border border-white/20"
             variants={scaleUp}
           >
             <Image
@@ -158,7 +152,7 @@ const page = () => {
           </motion.p>
         </motion.div>
        </motion.div>
-        {/* ================= SERVICES ================= */}
+       
         <motion.div
           className="text-center max-w-5xl mx-auto"
           initial="hidden"
@@ -219,7 +213,6 @@ const page = () => {
           </motion.div>
         </motion.div>
 
-        {/* ================= FOUNDER NOTE ================= */}
         <motion.div
           className="text-center max-w-3xl mx-auto"
           initial="hidden"
