@@ -1,5 +1,4 @@
 'use client'
-import Image from "next/image"
 import { motion } from 'framer-motion'
 
 const page = () => {
@@ -40,7 +39,6 @@ const page = () => {
       />
 
       <div className="relative max-w-6xl mx-auto space-y-28">
-{/* ================= OUR TEAM SECTION ================= */}
 <motion.div
   className="text-center max-w-4xl mx-auto"
   initial="hidden"
@@ -82,7 +80,6 @@ const page = () => {
   </motion.p>
 </motion.div>
 
-{/* ================= TEAM MEMBERS ================= */}
 <motion.div
   className="max-w-6xl mx-auto space-y-8"
   initial="hidden"
@@ -94,7 +91,6 @@ const page = () => {
     👥 Team Members & Designations
   </motion.h2>
    <div className="grid grid-cols-1 md:grid-cols-2 space-x-10 space-y-10">
-  {/* Founder */}
   <motion.div
     className="bg-white/10 border border-white/20 rounded-2xl p-6"
     variants={scaleUp}
@@ -110,7 +106,6 @@ const page = () => {
     </p>
   </motion.div>
 
-  {/* Editors */}
   <motion.div className="bg-white/10 border border-white/20 rounded-2xl p-6" variants={scaleUp}>
     <h3 className="text-xl font-bold">🎥 Video Editors & Motion Designers</h3>
     <p className="text-primary-aqua font-semibold mt-1">
@@ -122,7 +117,6 @@ const page = () => {
     </p>
   </motion.div>
 
-  {/* Cinematographers */}
   <motion.div className="bg-white/10 border border-white/20 rounded-2xl p-6" variants={scaleUp}>
     <h3 className="text-xl font-bold">📸 Cinematographers & Shoot Team</h3>
     <p className="text-primary-aqua font-semibold mt-1">
@@ -134,7 +128,6 @@ const page = () => {
     </p>
   </motion.div>
 
-  {/* Podcast */}
   <motion.div className="bg-white/10 border border-white/20 rounded-2xl p-6" variants={scaleUp}>
     <h3 className="text-xl font-bold">🎙️ Podcast Production Team</h3>
     <p className="text-primary-aqua font-semibold mt-1">
@@ -146,7 +139,6 @@ const page = () => {
     </p>
   </motion.div>
 
-  {/* Social Media */}
   <motion.div className="bg-white/10 border border-white/20 rounded-2xl p-6" variants={scaleUp}>
     <h3 className="text-xl font-bold">📱 Social Media & Brand Content Team</h3>
     <p className="text-primary-aqua font-semibold mt-1">
@@ -161,7 +153,6 @@ const page = () => {
 </motion.div>
 
 <div className="grid grid-cols-1 md:grid-cols-2 space-x-10 space-y-10">
-{/* ================= HOW WE WORK ================= */}
 <motion.div
   className="max-w-5xl mx-auto text-center space-y-6"
   initial="hidden"
@@ -189,7 +180,6 @@ const page = () => {
   </motion.p>
 </motion.div>
 
-{/* ================= WHY TRUST US ================= */}
 <motion.div
   className="max-w-5xl mx-auto text-center space-y-6"
   initial="hidden"
