@@ -20,11 +20,11 @@ const sections = [
   {
     title: "Services",
     links: [
-      { label: "Video Editing", href: "/services/video-editing" },
-      { label: "Motion Graphics", href: "/services/motion-graphics" },
-      { label: "Short-form Content", href: "/services/short-form" },
-      { label: "Corporate & Ads", href: "/services/corporate" },
-      { label: "YouTube & Creator Edits", href: "/services/youtube" },
+      { label: "Video Editing", href: "/services#video-editing" },
+      { label: "Motion Graphics", href: "/services#motion-graphics" },
+      { label: "Short-form Content", href: "/services#short-form" },
+      { label: "Corporate & Ads", href: "/services#corporate" },
+      { label: "YouTube & Creator Edits", href: "/services#youtube" },
     ],
   },
   {
