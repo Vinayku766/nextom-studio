@@ -43,11 +43,11 @@ const features = [
 
 const FeaturesSection = () => {
   return (
-    <section id="features" className="bg-black text-white py-20 px-6">
+    <section id="features" className="bg-black text-white py-10 px-6">
       <Div className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
           Various Styles,{' '}
-          <span className="bg-gradient-to-r from-primary-aqua to-secondary-blue bg-clip-text text-transparent">
+          <span className="bg-linear-to-r from-primary-aqua to-secondary-blue bg-clip-text text-transparent">
             Countless Assets
           </span>
         </h2>

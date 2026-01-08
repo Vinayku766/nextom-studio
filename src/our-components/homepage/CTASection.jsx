@@ -69,10 +69,10 @@ const sendEmail = async (e) => {
 };
 
   return (
-    <section id="cta" className="text-white py-20 px-4 relative z-2 overflow-hidden">
+    <section id="cta" className="text-white py-10 px-4 relative z-2 overflow-hidden">
              <Div className='space-y-6 mb-25 text-center'>
           <h2 className="text-3xl md:text-4xl font-bold">
-            Ready to <span className="bg-gradient-to-r from-primary-aqua to-secondary-blue bg-clip-text text-transparent">launch your story</span>?
+            Ready to <span className="bg-linear-to-r from-primary-aqua to-secondary-blue bg-clip-text text-transparent">launch your story</span>?
           </h2>
           <p className="text-gray-400">
             {`Share a brief and we’ll send a tailored plan with timelines and budget the same day.`}

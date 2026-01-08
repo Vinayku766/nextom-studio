@@ -37,17 +37,17 @@ export default function PricingSection() {
   };
 
   return (
-    <section id="pricing" className="bg-theme-dark text-theme-light py-16">
+    <section id="pricing" className="bg-theme-dark text-theme-light pt-10 pb-10">
       <Div className="container mx-auto px-6 max-w-6xl">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
           Transparent Pricing
         </h2>
-        <p className="text-center text-gray-400 max-w-2xl mx-auto mb-10">
+        <p className="text-center text-gray-400 max-w-2xl mx-auto mb-5">
           Flexible plans for creators, startups, and teams. Switch between monthly and yearly anytime.
         </p>
 
         <div className='flex justify-center gap-5 items-center flex-wrap'>
-          <div className="flex justify-center items-center gap-4 mb-12">
+          <div className="flex justify-center items-center gap-4">
             <span className="text-gray-300">INR</span>
             <button
               onClick={() => setIsUSD(!isUSD)}
@@ -68,9 +68,9 @@ export default function PricingSection() {
             </span>
           </div>
 
-          <hr className='h-6 w-[2px] bg-theme-light mb-12'/>
+          <hr className='h-6 w-0.5 bg-theme-light'/>
 
-          <div className="flex justify-center items-center gap-4 mb-12">
+          <div className="flex justify-center items-center gap-4">
             <span className="text-gray-300">Monthly</span>
             <button
               onClick={() => setIsYearly(!isYearly)}
@@ -92,10 +92,10 @@ export default function PricingSection() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="bg-white/5 group hover:scale-105 hover:bg-gradient-to-b hover:from-primary-aqua hover:to-theme-dark duration-500 ease-in-out backdrop-blur-md rounded-xl p-8 hover:shadow-xl transition">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+          <div className="bg-white/5 group hover:scale-105 hover:bg-linear-to-b hover:from-primary-aqua hover:to-theme-dark duration-500 ease-in-out backdrop-blur-md rounded-xl p-8 hover:shadow-xl transition">
             <h3 className="text-xl font-semibold mb-4">Starter</h3>
-            <div className="text-4xl font-bold bg-gradient-to-r from-primary-aqua to-secondary-blue bg-clip-text text-transparent group-hover:text-white mb-2">
+            <div className="text-4xl font-bold bg-linear-to-r from-primary-aqua to-secondary-blue bg-clip-text text-transparent group-hover:text-white mb-2">
               {formatPrice(pricingUSD.starter)}
             </div>
             <ul className="text-sm text-gray-300 space-y-2 mt-4">

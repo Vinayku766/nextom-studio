@@ -23,7 +23,7 @@ const HeroSection = () => {
             type="video/mp4"
           />
         </video>
-        <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black/90 to-transparent"></div>
+        <div className="absolute bottom-0 left-0 w-full h-1/3 bg-linear-to-t from-black/90 to-transparent"></div>
       </Div>
 
       <Div className="container max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-12 mt-5 relative z-10">
@@ -34,7 +34,7 @@ const HeroSection = () => {
           </span>
           <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
             Crafting{' '}
-            <span className="bg-gradient-to-r from-primary-aqua to-secondary-blue bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-primary-aqua to-secondary-blue bg-clip-text text-transparent">
               Cinematic Stories
             </span>{' '}
             for Brands & Creators
@@ -46,7 +46,7 @@ const HeroSection = () => {
           </p>
 
           {/* Neon Divider */}
-          <div className="w-20 h-1 bg-graident-to-r from-primary-aqua to-secondary-blue rounded-full" />
+          {/* <div className="w-20 h-1 bg-graident-to-r from-primary-aqua to-secondary-blue rounded-full" /> */}
 
           {/* Actions */}
           <div className="flex flex-wrap gap-4">

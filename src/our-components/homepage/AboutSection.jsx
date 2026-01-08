@@ -8,7 +8,7 @@ const AboutSection = () => {
       <Div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-20">
         
         {/* Avatar */}
-        <div className="shrink-0 w-75 h-75 md:w-52 md:h-52 rounded-full overflow-hidden">
+        <div className="flex justify-center items-center shrink-0 w-75 h-75 md:w-52 md:h-52 rounded-full overflow-hidden">
           {/* <Image
             src="/logo/logo.png"
             alt="Nextom Studio Logo"

@@ -57,7 +57,7 @@ export default function StatsSection() {
             className="relative text-center p-5 rounded-2xl border border-white bg-transparent backdrop-blur-sm before:content-[''] before:absolute before:inset-[-1px] before:rounded-2xl before:bg-[conic-gradient(from_0deg,rgba(66,246,181,0.18),rgba(111,225,255,0.18),rgba(176,108,255,0.18),rgba(66,246,181,0.18))] before:blur-lg before:opacity-25 before:-z-10"
           >
             <div
-              className="text-[clamp(1.5rem,3vw,2.5rem)] font-black num bg-gradient-to-r from-primary-aqua to-secondary-blue bg-clip-text text-transparent text-shadow-lg"
+              className="text-[clamp(1.5rem,3vw,2.5rem)] font-black num bg-linear-to-r from-primary-aqua to-secondary-blue bg-clip-text text-transparent text-shadow-lg"
               data-count={count}
             >
               0

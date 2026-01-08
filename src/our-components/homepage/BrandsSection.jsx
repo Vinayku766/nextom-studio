@@ -49,7 +49,7 @@ const loopedBrands = [...brands, ...brands] // repeat for seamless scrolling
 
 const BrandsSection = () => {
   return (
-    <section className="bg-black py-10 overflow-hidden border-t border-b border-white/10">
+    <section className="bg-black py-5 overflow-hidden border-t border-b border-white/10">
       <Div className="relative max-w-6xl mx-auto overflow-hidden">
         <div className="marquee-track flex gap-6 w-max">
           {loopedBrands.map((brand, i) => (

@@ -28,7 +28,7 @@ const faqData = [
 
 const FAQSection = () => {
   return (
-    <section id="faq" className="bg-black text-white py-20 px-6">
+    <section id="faq" className="bg-black text-white py-10 px-6">
       <Div className="max-w-4xl mx-auto">
         {/* Section Title */}
         <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center">

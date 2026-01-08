@@ -35,7 +35,7 @@ export default function FeatureDemoSection() {
   const [selectedTab, setSelectedTab] = useState("p1");
 
   return (
-    <section className="relative bg-black text-white py-20 overflow-hidden">
+    <section className="relative bg-black text-white py-10 overflow-hidden">
       <Div className="absolute inset-0 z-0">
         <div className="absolute -top-32 left-16 w-96 h-96 bg-gray/50 blur-[160px] rounded-full"></div>
         <div className="absolute top-48 right-20 w-[500px] h-[500px] bg-gray-500/50 blur-[180px] rounded-full"></div>
