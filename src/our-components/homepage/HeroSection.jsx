@@ -1,13 +1,19 @@
 'use client'
-import React from 'react';
+import {useState, useEffect} from 'react';
 import Link from "next/link";
 import Div from '../common/DIv';
 
 
 const HeroSection = () => {
-  return (
+  const [videoReady, setVideoReady] = useState(false);
+
+  useEffect(() => {
+  const timeout = setTimeout(() => setVideoReady(true), 500);
+  return () => clearTimeout(timeout);
+  }, [])
+
+    return (
     <section id="top" className="relative w-full bg-transparent text-white px-6 py-10 md:py-20">
-      {/* Video Section (Background) */}
       <Div className="absolute top-0 left-0 w-full h-full -z-1">
         <video
           id="heroVideo"
@@ -15,7 +21,8 @@ const HeroSection = () => {
           muted
           loop
           playsInline
-          // poster="https://images.unsplash.com/photo-1526948128573-703ee1aeb6fa?q=80&w=1600&auto=format&fit=crop"
+          preload='metadata'
+          poster="/videos/thumbnail/NextomStudio.webp"
           className="w-full h-full object-cover"
         >
           <source
@@ -27,7 +34,6 @@ const HeroSection = () => {
       </Div>
 
       <Div className="container max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-12 mt-5 relative z-10">
-        {/* Text Content */}
         <div className="flex-2 space-y-6">
           <span className="inline-block bg-white/10 text-sm px-3 py-1 rounded-full tracking-wide">
             Premium Video Editing • Fast Turnarounds
@@ -45,10 +51,8 @@ const HeroSection = () => {
             time‑stamped comments, and ship faster.
           </p>
 
-          {/* Neon Divider */}
           {/* <div className="w-20 h-1 bg-graident-to-r from-primary-aqua to-secondary-blue rounded-full" /> */}
 
-          {/* Actions */}
           <div className="flex flex-wrap gap-4">
             <Link
               href="#cta"
@@ -70,7 +74,6 @@ const HeroSection = () => {
             </a> */}
           </div>
 
-          {/* Badges */}
           <div className="flex flex-wrap gap-2 mt-6">
             {['24–72h Turnaround', 'Color • Sound • VFX', 'Motion Graphics', 'Nextom Studio • Showreel'].map((badge, i) => (
               <span
@@ -83,7 +86,6 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* Video Section Label */}
         {/* <div className="bg-white/10 text-white text-sm px-4 py-1 backdrop-blur-md rounded-full shadow-inner border border-white/10 z-10">
           Nextom Studio • Showreel
         </div> */}
