@@ -4,8 +4,8 @@ import Div from '../common/DIv'
 const AboutSection = () => {
 
   return (
-    <section id="about" className="bg-black text-white py-10 px-6 relative">
-      <Div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-20">
+    <section id="about" className="bg-black text-white py-5 px-6 relative">
+      <Div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-5">
         
         {/* Avatar */}
         <div className="flex justify-center items-center shrink-0 w-75 h-75 md:w-52 md:h-52 rounded-full overflow-hidden">
