@@ -163,10 +163,10 @@ const Footer = () => {
                       after:content-[''] 
                       after:absolute
                       after:left-0
-                      after:bottom-[-5px]
-                      after:h-[3px]
+                      after:-bottom-1.25
+                      after:h-0.75
                       after:w-0
-                      after:bg-gradient-to-r
+                      after:bg-linear-to-r
                     after:from-primary-aqua
                     after:to-secondary-blue
                       after:transition-all
@@ -211,7 +211,7 @@ const Footer = () => {
         </div>
         <div className="text-center border-t border-white/10 pt-4">
           <small className="block text-white/60 text-xs">
-            © 2025 Nextom Studio. All rights reserved.
+            © 2026 Nextom Studio. All rights reserved.
           </small>
         </div>
       </Div>
