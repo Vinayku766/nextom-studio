@@ -64,6 +64,30 @@ html, body{
    animation-play-state: paused;
 }
 
+@keyframes ring {
+  0% { transform: rotate(0); }
+  1% { transform: rotate(10deg); }
+  3% { transform: rotate(-10deg); }
+  5% { transform: rotate(10deg); }
+  7% { transform: rotate(-10deg); }
+  9% { transform: rotate(0); }
+  100% { transform: rotate(0); }
+}
+
+.animate-ring {
+  animation: ring 3s infinite;
+  transform-origin: center;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
 
 
 

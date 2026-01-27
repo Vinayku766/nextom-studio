@@ -1,6 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import NavigationBar from "@/our-components/NavigationBar";
+import Link from "next/link";
+import { FaWhatsapp } from "react-icons/fa";
 import Footer from "@/our-components/Footer";
 import { ToastContainer } from "react-toastify";
 import PopupProviderHook from "@/utils/PopupProviderHook";
@@ -39,6 +41,15 @@ export default function RootLayout({ children }) {
         <ToastContainer />
         <PaymentPopup />
       <Footer />
+<Link
+  href="https://wa.link/ll8ldb"
+  target="_blank"
+  className="fixed right-5 bottom-5 z-10 flex items-center gap-2 px-3 py-2 rounded-xl bg-white/20 backdrop-blur-md border border-white/30 shadow-lg shadow-black/10 text-white hover:bg-white/30 hover:shadow-xl transition-all duration-300 animate-float"
+>
+  <FaWhatsapp className="text-3xl text-green-600 animate-ring" />
+  <span className="font-medium">Chat with us</span>
+</Link>
+
       </PopupProviderHook>
       </body>
     </html>
