@@ -77,14 +77,14 @@ const Footer = () => {
     >
       <Div className="absolute inset-0 z-0 overflow-hidden">
         <div className="absolute inset-0 flex justify-between px-10">
-          <div className="w-52 h-[500px] bg-gradient-to-t from-primary-aqua/90 via-secondary-blue/80 to-transparent blur-[100px] animate-aurora-vertical"></div>
-          <div className="w-40 h-[450px] bg-gradient-to-t from-primary-aqua/90 via-secondary-blue/80 to-transparent blur-[90px] animate-aurora-fade [animation-delay:1s]"></div>
+          <div className="w-52 h-125 bg-linear-to-t from-primary-aqua/90 via-secondary-blue/80 to-transparent blur-[100px] animate-aurora-vertical"></div>
+          <div className="w-40 h-112.5 bg-linear-to-t from-primary-aqua/90 via-secondary-blue/80 to-transparent blur-[90px] animate-aurora-fade [animation-delay:1s]"></div>
 
-          <div className="w-56 h-[550px] bg-gradient-to-t from-primary-aqua/90 via-secondary-blue/80 to-transparent blur-[120px] animate-aurora-wobble [animation-delay:2s]"></div>
-          <div className="w-44 h-[400px] bg-gradient-to-t from-primary-aqua/90 via-secondary-blue/80 to-transparent blur-[100px] animate-aurora-fade [animation-delay:3s]"></div>
+          <div className="w-56 h-137.5 bg-linear-to-t from-primary-aqua/90 via-secondary-blue/80 to-transparent blur-[120px] animate-aurora-wobble [animation-delay:2s]"></div>
+          <div className="w-44 h-100 bg-linear-to-t from-primary-aqua/90 via-secondary-blue/80 to-transparent blur-[100px] animate-aurora-fade [animation-delay:3s]"></div>
 
-          <div className="w-52 h-[480px] bg-gradient-to-t from-primary-aqua/90 via-secondary-blue/80 to-transparent blur-[110px] animate-aurora-vertical [animation-delay:4s]"></div>
-          <div className="w-40 h-[420px] bg-gradient-to-t from-primary-aqua/90 via-secondary-blue/80 to-transparent blur-[100px] animate-aurora-wobble [animation-delay:5s]"></div>
+          <div className="w-52 h-120 bg-linear-to-t from-primary-aqua/90 via-secondary-blue/80 to-transparent blur-[110px] animate-aurora-vertical [animation-delay:4s]"></div>
+          <div className="w-40 h-105 bg-linear-to-t from-primary-aqua/90 via-secondary-blue/80 to-transparent blur-[100px] animate-aurora-wobble [animation-delay:5s]"></div>
         </div>
       </Div>
 
@@ -123,17 +123,20 @@ const Footer = () => {
 
               <Link
                 href="tel:+919315084010"
+                target='_blank'
                 className="hover:text-primary-aqua hover:scale-120 duration-300 transition"
               >
                 <FiPhone />
               </Link>
               <Link
-                href="https://www.instagram.com/nextomstudio/"
+                target='_blank'
+                href="https://www.instagram.com/nextomstudi0/"
                 className="hover:text-primary-aqua hover:scale-120 duration-300 transition"
               >
                 <FaInstagram />
               </Link>
               <Link
+                target='_blank'
                 href="https://www.youtube.com/@nextomstudio8727"
                 className="hover:text-primary-aqua hover:scale-120 duration-300 transition"
               >
