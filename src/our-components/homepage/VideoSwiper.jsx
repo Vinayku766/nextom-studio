@@ -28,7 +28,7 @@ const VideoSwiper = () => {
     id: "1",
     url: "/videos/shorts/video-1-10.mp4",
     title: "Creative Branding",
-    description: "We create powerful brand experiences through video.",
+    description: "Powerful video experiences for your brand.",
     buttonText: "Contact Us",
     buttonBackgroundColor: "#000",
     bottomBackgroundColor: "#ef4444",
