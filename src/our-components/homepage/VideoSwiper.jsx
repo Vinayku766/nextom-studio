@@ -182,47 +182,67 @@ const VideoSwiper = () => {
           const isActive = index === activeSlide;
 
           return (
-            <SwiperSlide
-              key={slide.id}
-              style={{
-                flexShrink: 0,
-                width: "70%", 
-                transition: "opacity 0.5s ease",
-                border: "1px solid #fff",
-                borderRadius: ".75rem"
-              }}
-            >
-              <div
-                onClick={() => swiperRef.current.slideToLoop(index)}
-                className={`cursor-pointer transition-all duration-500 
-                  ${isActive ? "opacity-100 z-10" : "opacity-50 z-0"}`}
-              >
-                <div className="rounded-xl overflow-hidden shadow-lg">
-                  <video
-                    src={slide.url}
-                    autoPlay
-                    playsInline
-                    muted
-                    loop
-                    className="w-full h-55 object-cover"
-                  />
-                </div>
-                <div
-                  className="p-4 text-center rounded-b-xl"
-                  style={{ backgroundColor: slide.bottomBackgroundColor }}
-                >
-                  <h4 className="font-semibold text-white text-xl">{slide.title}</h4>
-                  <p className="text-xs my-3 text-white">{slide.description}</p>
-                  <Link
-                    href={"/contact"}
-                    className="mt-3 block font-semibold py-3 w-full rounded-md text-white"
-                    style={{ backgroundColor: slide.buttonBackgroundColor }}
-                  >
-                    {slide.buttonText}
-                  </Link>
-                </div>
-              </div>
-            </SwiperSlide>
+           <SwiperSlide
+  key={slide.id}
+  style={{
+    flexShrink: 0,
+    width: "70%",
+  }}
+>
+  <div
+    onClick={() => swiperRef.current.slideToLoop(index)}
+    className={`
+      cursor-pointer
+      transition-all duration-500
+      ${isActive ? "opacity-100 z-10 scale-100" : "opacity-60 z-0 scale-95"}
+    `}
+  >
+    <div
+      className="
+        rounded-xl 
+        overflow-hidden 
+        shadow-2xl
+        border 
+        border-white/20
+        bg-white/5
+        backdrop-blur-xl
+      "
+      style={{
+        backdropFilter: "blur(20px)",
+        WebkitBackdropFilter: "blur(20px)",
+      }}
+    >
+      <div className="overflow-hidden">
+        <video
+          src={slide.url}
+          autoPlay
+          playsInline
+          muted
+          loop
+          className="w-full h-55 object-cover"
+        />
+      </div>
+      <div
+        className="p-4 text-center bg-transparent backdrop-blur-md"
+      >
+        <h4 className="font-semibold text-white text-xl">
+          {slide.title}
+        </h4>
+
+        <p className="text-xs my-3 text-white/90">
+          {slide.description}
+        </p>
+
+        <Link
+          href={"/contact"}
+          className="mt-3 block font-semibold py-2 w-full rounded-md text-white backdrop-blur-sm bg-white/30 border border-white/50 hover:bg-white/30 transition"
+        >
+          {slide.buttonText}
+        </Link>
+      </div>
+    </div>
+  </div>
+</SwiperSlide>
           );
         })}
       </Swiper>
